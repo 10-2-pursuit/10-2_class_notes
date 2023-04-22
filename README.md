@@ -1,5 +1,5 @@
-# 10.2_class_notes
-# Welcome to the Cybernetic Lecture Notes Repository!
+
+# Welcome to the 10.2 Lecture Notes Repository!
 
 ## Introduction
 
