@@ -22,8 +22,11 @@ So put on your Yankees cap, lace up those Tim's, grab a dollar slice, and join u
 7. Each group member will `create a new branch` in the repository.
 8. Each group member will add their own `paragraph under their individual heading` detaling their choice of the topic.
 9. Once they have made their changes, each member should `commit and push` their changes to their individual branch and create a `pull request`.
-10. Finally, the driver must `merge` all their changes into the main branch of the repository.
-11.  All group members navigate to the `main` branch of their local repository and `pull` the new changes.
-12. After 30 minutes we will come back to the main room and share our results
+### Bonus
+The final step in the process of working with `git` and `github` is integrating the changes our colleagues made.  
+
+This is known as `merging`
+
+Together as a grouup - see if you can successfully `merge` the pull requests made by your teammates.  If your group successfully `merges` the new code, have each group member navigate to their own `local repository` and `pull` the changes.
 
 This activity will allow you to work collaboratively on GitHub and get hands-on experience with branching, committing, and merging changes. It also allows for creativity and engagement with your group's chosen topic.
