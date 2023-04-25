@@ -6,7 +6,7 @@ Hey, you guys! Are you looking for an opportunity to tell the world what you rea
 
 In this group project, you'll be paired up with a bunch of other New Yorkers, and together you'll be creating a brand-new repository on GitHub, dedicated to rating the best and the worst of this town. You'll be collaborating on a Markdown file where you can share your thoughts on the best slice in Brooklyn, the worst tourist traps in Times Square, and everything in between.
 
-So put on your Yankees cap, lace up those Tim's, grab a dollar slice, and join us for this one-of-a-kind adventure. Because nobody knows this town better than a real old-school New Yorker like you!
+So put on your Yankees cap, lace up those Tims, grab a dollar slice, and join us for this one-of-a-kind adventure. Because nobody knows this town better than a real old-school New Yorker like you!
 
 ## Instructions
 
