@@ -8,6 +8,20 @@
 ## Today's Lab
 [Github lab](https://github.com/10-2-pursuit/lab-github)
 
+## Quick Git Reference
+
+### Key Terms
+- What is a `commit`
+- What is a `branch`
+- What is a `local branch`
+- What is a `local remote branch`
+
+### Git Illustrated
+![git illustrated](assets/git-allison-horst.png)
+
+
+
+
 
 ## Today's Pairs
 1. Aisha Kleemoff, Kanique Cox
