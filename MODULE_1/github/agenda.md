@@ -1,8 +1,10 @@
-# Agenda
-7:00 - 8:00 Github Lecture
-8:00 - 8:30 Github group activity
-8:30 - 8:45 Break
-8:45 - 10:00 Lab / Flex-time
+# Github 4/25/23
+
+## Agenda
+* 7:00 - 8:00 Github Lecture / Announcements
+* 8:00 - 8:30 Github group activity
+* 8:30 - 8:45 Break
+* 8:45 - 10:00 Lab / Flex-time
 
 
 ## Today's Lab
@@ -11,13 +13,17 @@
 ## Quick Git Reference
 
 ### Key Terms
-- What is a `commit`
-- What is a `branch`
-- What is a `local branch`
-- What is a `local remote branch`
+- What is `git` - why do we use `git`
+- What is `github`? how are they different? 
+- What is a `commit`?
+- What is a `commit`?
+- What is a `branch`?
+- What is a `local branch`?
+- What is a `local remote branch`?
 
 ### Git Illustrated
-![git illustrated](assets/git-allison-horst.png)
+<img src="assets/git-allison-horst.png" alt="git illustrated" width="50%">
+
 
 
 
