@@ -27,6 +27,6 @@ The final step in the process of working with `git` and `github` is integrating 
 
 This is known as `merging`
 
-Together as a grouup - see if you can successfully `merge` the pull requests made by your teammates.  If your group successfully `merges` the new code, have each group member navigate to their own `local repository` and `pull` the changes.
+Together as a group - see if you can successfully `merge` the pull requests made by your teammates.  If your group successfully `merges` the new code, have each group member navigate to their own `local repository` and `pull` the changes.
 
 This activity will allow you to work collaboratively on GitHub and get hands-on experience with branching, committing, and merging changes. It also allows for creativity and engagement with your group's chosen topic.
