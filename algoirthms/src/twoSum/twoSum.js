@@ -24,7 +24,21 @@ function twoSum(nums, target) {
         seenNums[nums[i]] = i
     }
 }
-    
+// Joseph's solution - great work! 
+function twoSumJoesephCarterStyle(numbers, target) {
+    const finalProduct = {};
+    // notice here we are declaring an index with a value of 0
+        // this is the same as `let i = 0` 
+    let index = 0;
+   for (let num of numbers) {
+      const values = target - num;
+      if (values in finalProduct) {
+        return [finalProduct[values], index];
+      }
+      finalProduct[num] = index;
+      index++
+    }
+  }
 let myArr = [1,8,22,14,5]
 console.log(twoSum(myArr, 22))
   
