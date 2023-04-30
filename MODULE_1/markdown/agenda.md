@@ -15,17 +15,17 @@ Good morning 10.2 - please find a break out room and attmpt to solve [DismVowell
 At 9:15 we will reconvene as a class and go over our solutions.
 
 ## Today's Pairs
-1. Erick Martinez, Joseph Carter
-2. Davon Bridgett, Keith Camacho
-3. Nasser Said Martinez Puerta, Jalal Jonaid
-4. Dwayne Jones, Alexander Tsiklidis
-5. Genesis Lara, Sung Yi
-6. Christopher Baker 
-7. Mikal Wazeerud-Din, Anthony Huarneck
-8. Emily Mohr, Shanice Griffin
-9. Ruslan Poptsov, Areebur Rahman
-10. Addis Jackson, Elisaul Batista
-11. Michael Caldwell, Aisha Kleemoff
-12. Anile Choice, Winder Joel Marte
-13. Kenny Mercedes, Nicole Slater
-14. Kanique Cox, Erick Tolentino
+1. Aisha Kleemoff, Kanique Cox
+2. Dwayne Jones, Shanice Griffin
+3. Michael Caldwell, Emily Mohr
+4. Mikal Wazeerud-Din, Addis Jackson
+5. Ruslan Poptsov, Areebur Rahman
+6. Nasser Said Martinez Puerta, Davon Bridgett
+7. Brandon Harris, Joseph Carter
+8. Sung Yi, Alexander Tsiklidis
+9. Christopher Baker, Nicole Slater
+10. Anthony Huarneck, Erick Tolentino
+11. Kenny Mercedes, Keith Camacho
+12. Genesis Lara, Anile Choice
+13. Elisaul Batista, Jalal Jonaid
+14. Winder Joel Marte, Erick Martinez
