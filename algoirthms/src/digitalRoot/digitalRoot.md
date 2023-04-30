@@ -1,9 +1,9 @@
 # digitalRoot
-Write a function `digitalRoot(n)` that takes in a positive integer `n` and returns its digital root.
+Pull the latest version of the class notes.  Write a function `digitalRoot(n)` that takes in a positive integer `n` and returns its digital root.
 
 ## Testing
 
-To test your function run:
+To test your function navigate to the `algoirthms` directory and run:
 
 ```
 npm install
