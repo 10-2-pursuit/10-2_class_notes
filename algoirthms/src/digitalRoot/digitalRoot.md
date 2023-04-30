@@ -47,9 +47,17 @@ digitalRoot(132189) // => 6
 
 ## Solutions
 
-### One
+### One - String Maniulation
 
 <summary>
+1. Define a function digitalRoot that takes an integer n as input.
+2. Convert n to a string using the toString() method.
+3. Define a variable called sum and initialize it to 0.
+4. Use a for loop to iterate over the digits in the string representation of n.
+    a. Convert the current digit to an integer using the parseInt() function.
+    b. Add the integer digit to sum.
+5. If sum is greater than or equal to 10, call digitalRoot with sum as the input.
+6. Otherwise, return sum.
 
 
 <details>
@@ -57,6 +65,21 @@ digitalRoot(132189) // => 6
 
 
 ```js
+function digitalRoot(n) {
+  let sum = n;
+  
+  while (sum >= 10) {
+    let digits = sum.toString().split('');
+    sum = 0;
+    for (let digit of digits) {
+      sum += parseInt(digit);
+    }
+  }
+  
+  return sum;
+}
+
+
 
 ```
 
@@ -64,15 +87,35 @@ digitalRoot(132189) // => 6
 
 </summary>
 
-### Two
+### Two - Itterative
 
 <summary>
+1. Define a function digitalRoot that takes an integer n as input.
+2. Define a variable called sum and initialize it to 0.
+3. Use a while loop to iterate while n is greater than 0.
+    a. Get the last digit of n by taking the remainder of n divided by 10.
+    b. Add the last digit to sum.
+    c. Divide n by 10 and discard any remainder.
+4. If sum is greater than or equal to 10, call digitalRoot with sum as the input.
+5. Otherwise, return sum.
 
 <details>
 
 ```js
+function digitalRoot(n) {
+  if (n < 10) {
+    return n;
+  }
 
+  let sum = 0;
+  const digits = n.toString().split('');
 
+  digits.forEach((digit) => {
+    sum += parseInt(digit);
+  });
+
+  return digitalRoot(sum);
+}
 ```
 
 </details>
