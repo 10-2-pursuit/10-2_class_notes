@@ -64,7 +64,7 @@ digitalRoot(132189) // => 6
 
 </summary>
 
-### Iterative
+### Two
 
 <summary>
 
