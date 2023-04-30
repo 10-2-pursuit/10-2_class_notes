@@ -1,7 +1,5 @@
 # name
 
-
-
 Try it on [CodeWars]()
 
 ## Testing
