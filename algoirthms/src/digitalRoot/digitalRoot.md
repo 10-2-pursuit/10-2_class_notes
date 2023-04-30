@@ -8,7 +8,7 @@ To test your function run:
 ```
 npm install
 
-npm test --testPathPattern=digitalRoot.test.js
+npm test digitalRoot
 ```
 
 ## Definition
