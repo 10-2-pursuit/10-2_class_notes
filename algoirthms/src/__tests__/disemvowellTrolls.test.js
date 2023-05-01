@@ -1,4 +1,4 @@
-const disemvowel = require("../disemvowellTrolls/disemvowellTrolls");
+const { disemvowel } = require("../disemvowellTrolls/disemvowellTrolls");
 
 describe("disemvowel", () => {
     test("removes all vowels from a string", () => {

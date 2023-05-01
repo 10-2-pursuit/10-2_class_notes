@@ -1,6 +1,6 @@
-const twoSum = require("../twoSum/twoSum")
+const { twoSum } = require("../twoSum/twoSum")
 
-const twoSum = require('./twoSum');
+
 
 describe('twoSum', () => {
   it('should return [0, 1] for nums=[2, 7, 11, 15] and target=9', () => {
