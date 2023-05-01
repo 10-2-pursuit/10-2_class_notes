@@ -1,4 +1,4 @@
-import { comics } from "./comics";
+const { comics } = require("./comics");
 /*
 
 Learning Objectives
@@ -31,9 +31,7 @@ A lil' review
 
 */
  //  Lets declare some functions before we dive into the lesson
-
-
- /**
+/**
  * Checks if the given comic is a web comic.
  *
  * @param {Object} comic - An  object representing a comic.
@@ -42,9 +40,8 @@ A lil' review
 const isWebComic = () => {
 
 }
-
- /**
- * Checks if the given array of comics is valid.
+/**
+ * Checks if the given array of comics all have titles.
  *
  * @param {Object[]} comics - An array of objects representing comics.
  * @returns {boolean} - `true` if the array is valid, `false` otherwise.
@@ -54,16 +51,17 @@ const allComicsHaveTitles = () => {
 
 }
 
- /**
- * Checks if the given array of comics is valid.
+/**
+ * Checks if the given array of comics are print.
  *
  * @param {Object[]} comics - An array of objects representing comics.
  * @returns {boolean} - `true` if the array is valid, `false` otherwise.
  */
 
 const allComicsArePrint = () => {
-
+   
 }
+
 
 
 
@@ -81,7 +79,34 @@ const allComicsArePrint = () => {
 // - How does the `.some()` method differ from the `.every()` method? How is it similar?
   
     
+// sort()- what is it and why do we use it?
+    // what does the name tell us?
+
+//- Calling the `.sort()` method looks like it might magically work, depending on the elements in the array it is sorting.
+ 
+const numbers = [4, 2, 3, 1, 0];
+
+// how would we sort numbers using .sort()
+
+// The `.sort()` method expects one argument. What data type is this argument?
+
+// The `.sort()` method's callback function has up to two parameters. What are these parameters?
+
+// The `.sort()` method's callback function expects a number to be returned. 
+    // The number must either be a positive number, a negative number, or `0`. 
+        // What is the effect of each of these values?
+            // Why would sort be built in this way?
+
+//  Is `.sort()` a destructive or non-destructive method?
+
+// Take a look at the table below. What does each column mean?
 
 
-
-// sort()
+/* 
+  | Method     | Callback expected return value | Method return value | Destructive? |
+  | ---------- | ------------------------------ | ------------------- | ------------ |
+  | `.every()` | Boolean.                       | Boolean.            | No.          |
+  | `.some()`  | Boolean.                       | Boolean.            | No.          |
+  | `.sort()`  | Number.                        | An array.           | Yes.         |
+*/
+            

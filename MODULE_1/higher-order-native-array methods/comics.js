@@ -5,4 +5,4 @@ const comics = [
     { title: "False Knees", author: "Joshua Barkman", kind: "web" },
   ];
 
-module.exports={comics}
+module.exports={ comics }
