@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Greetings, 10.2! Welcome to our repository of lecture notes. Here, you'll find all the knowledge you need to survive in the our world of coding. Our notes cover a range of topics, from the basics of Javascript to advanced concepts like React, Express, and DSA. So put on your neural implants, jack in to the matrix, and let's get started!
+Greetings, 10.2! Welcome to our repository of lecture notes. Here, you'll find all the knowledge you need to survive in the our world of coding. Our notes cover a range of topics, from the basics of Javascript to advanced concepts like React, Express, and DSA. So grab your coffee, fire up that code editor, and lets get started!
 
 ## Usage
 
