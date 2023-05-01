@@ -11,10 +11,10 @@
             "program": "${workspaceFolder}/index.js"
         },
         {
-            "type": "node",
             "name": "Run Current File",
+            "type": "node",
             "request": "launch",
-            "program": "${workspaceFolder}/MODULE_1/higher-order-functions/higher-order-functions.js"
-        }
+            "program": "${file}"
+          }
     ]
 }
