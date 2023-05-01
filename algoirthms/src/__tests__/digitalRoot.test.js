@@ -1,4 +1,4 @@
-const  digitalRoot = require("../digitalRoot/digitalRoot")
+const { digitalRoot } = require("../digitalRoot/digitalRoot")
 
 describe('digitalRoot', () => {
   test('returns the correct digital root for 16', () => {

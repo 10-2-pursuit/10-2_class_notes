@@ -2,4 +2,4 @@ const whatever = () => {
 
 }
 
-module.exports = whatever;
+module.exports = { whatever };

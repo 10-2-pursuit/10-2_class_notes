@@ -1,4 +1,4 @@
 function digitalRoot(n) {
 
   }
-module.exports = digitalRoot
+module.exports ={ digitalRoot }
