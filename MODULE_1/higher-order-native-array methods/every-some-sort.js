@@ -207,3 +207,7 @@ console.log(numbers)
     })
     console.log(comics)
             
+    /*
+        Hey Ya'll if you want a bonus try our Snowman challenge here
+         https://github.com/10-2-pursuit/snowman-cli-challenge
+    */
