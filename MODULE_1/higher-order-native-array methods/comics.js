@@ -6,3 +6,5 @@ const comics = [
   ];
 
 module.exports={ comics }
+
+//demo example 
