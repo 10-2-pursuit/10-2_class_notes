@@ -71,11 +71,10 @@ A lil' review
  * @returns {boolean} - `true` if the comic is a webcomic, `false` otherwise.
  */
 // lets look at our data and find what we're working with
+
+// we're checking if a comic has a certain attribute - is a webcomic
 const isWebComic = (comic) => {
-    if (comic.kind === "web" ) {
-        return true
-    }
-    return false
+
 }
 
 // console.log(isWebComic(comics[0]), "this is from line 81")
