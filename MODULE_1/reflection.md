@@ -3,14 +3,14 @@
 ## Agenda
 - 9:00 - 9:15 End of Module Survey
 - 9:15 - 9:30 End of Module Reflection / Announcements
-- 9:30 - 2:00 One on One Interviews/ Flex Time
+- 9:30 - 1:00 One on One Interviews/ Flex Time
 
 ## End of Module Survey
 https://docs.google.com/forms/d/e/1FAIpQLScn8Nv5wgFognst5kg7t8l6QGb8KyHMAMaaAOLcwxLTI7SVrg/viewform
 
 ## Reflection Group Activity
 1. With your group declare a note taker to recorc the groups ansers and a presenter who will present to class.
-2. Together with your group spend 10 minutes to answer the following quesitons.
+2. Together with your group spend 15 minutes to answer the following quesitons. Make sure each fellow has some input on each question.
 
 - What was difficult about this module?
 - What am I proud of in this moudle?
@@ -18,6 +18,8 @@ https://docs.google.com/forms/d/e/1FAIpQLScn8Nv5wgFognst5kg7t8l6QGb8KyHMAMaaAOLc
 - What would I have done differently in this moudle?
 - What do I want to do more in the next module?
 - What advice would I give to the next cohort joining this module?
+
+4. Note any common themes among your answers.
 
 3.  Present your results to the class.
 
