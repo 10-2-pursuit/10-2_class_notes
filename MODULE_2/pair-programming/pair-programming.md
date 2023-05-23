@@ -76,23 +76,47 @@ Best
 ## Reference Questions
 
 ### What does it mean to Pair Program?
+Working hand in hand - one person drives - writes everything down.  
+Other person navigates and gives tips to the driver - Emily Mohr
 
 ### What are the two roles in pair programming? What is the purpose of each role?
 
 #### Role 1 
+Driver - is the person who actually does the typing.  The driver usually is taking an easier time working on the code - they're doign the typing and the other person (navigator) is the one conceptually working things out
 
 
 #### Role 2
+Navigator - navigator guides the driver on what to do. 
 
 
 ### What are some of the benefits of pair programming? Think of as many as you can.
 
+It's always good to have someone who can look over your code for errors;
+Two minds > one.  Figuring out different ways to get to the solution; -  Brandon Harris
+
+I've spent hours on coed eand ana tlooked it over and it was a comma - Tonesha Rose
+
+
+
 ### What do you think will be challenging about working in this style?
+
+Everyone has different styles - your style might not be your partners style - Keith Camacho
+
+People have different levels of understanding - Brandon Harris
 
 ### Why do you think Pursuit wants you to spend time pair programming?
 
-### What is the Pomodoro technique?
+Its beneficial for both parties - the teacher will benefit form reinforcing what they already know - the person who doesn't udnerstand LEARNs
 
+
+
+### What is the Pomodoro technique?
+A tehcnique designed for **time management**
+Set a task for 25 min
+Once its up - take a 5 min break
+
+Repeat the process 
+After Four take a 35 minute break
 
 ## Pair Programming Norms
 
