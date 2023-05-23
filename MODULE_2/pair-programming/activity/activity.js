@@ -1,5 +1,6 @@
+// fixes import path
 const coffeeOrders = require("./data/coffee");
-
+// moves return outside of loop scope
 function calculateTotalOrders(orders) {
   let total = 0;
   for (let i = 0; i < orders.length; i++) {
@@ -10,12 +11,14 @@ function calculateTotalOrders(orders) {
 
 function calculateTotalSales(orders) {
   let totalSales = 0;
+  // changes loop to `<`
   for (let i = 0; i < orders.length; i++) {
     totalSales += calculateOrderPrice(orders[i]);
   }
   return totalSales;
 }
-
+// adds a conditional to account for coffee w/o sugar
+// adds a default case for switch
 function calculateOrderPrice(order) {
   let basePrice = 0;
   switch (order.size) {
@@ -35,13 +38,12 @@ function calculateOrderPrice(order) {
   const sugarPrice = order.sugar > 0 ? 0.5 * order.sugar : 0;
   return basePrice + sugarPrice;
 }
-
+// adds return and no longer checks for bad data property
 function getCompletedOrders(orders) {
-  return orders.filter(
-    (order) => order.status === "Completed" && order.completedDate
-  );
+  return orders.filter((order) => order.status === "Completed" );
 }
-
+// correctly uses bracket notation on salesByCoffeeType
+// changes line 50 from "+" to "+="
 function getSalesByCoffeeType(orders) {
   const salesByCoffeeType = {};
   for (let i = 0; i < orders.length; i++) {
@@ -54,7 +56,8 @@ function getSalesByCoffeeType(orders) {
   }
   return salesByCoffeeType;
 }
-
+// adds return to line 62
+// properly initializes sum with 0 in line 66
 function calculateTotalPriceOfCompleteOrders(orders) {
   const totalPrice = orders.reduce((sum, order) => {
     if (order.status === "Completed") {
