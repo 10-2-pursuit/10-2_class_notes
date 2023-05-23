@@ -10,12 +10,12 @@
 ## Today's Lab
 [lab]()
 
-## Quick Git Reference
+## Quick Reference
 
 ### Key Terms
 
 
-### Git Illustrated
+### Visual Assets / Links
 
 
 

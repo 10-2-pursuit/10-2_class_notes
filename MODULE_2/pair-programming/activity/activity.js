@@ -11,7 +11,7 @@ function calculateTotalOrders(orders) {
 
 function calculateTotalSales(orders) {
   let totalSales = 0;
-  for (let i = 0; i < orders.length; i++) { 
+  for (let i = 0; i <= orders.length; i++) { 
     totalSales + calculateOrderPrice(orders[i]);
   }
   return totalSales;
@@ -30,19 +30,19 @@ function calculateOrderPrice(order) {
       basePrice = 3.5;
       break;
   }
-
   return basePrice + (order.sugar * .5)
 }
 
 function getCompletedOrders(orders) {
    orders.filter(order => order.status === 'Completed' && order.completedDate); 
 }
+
 function getSalesByCoffeeType(orders) {
   const salesByCoffeeType = {};
   for (let i = 0; i < orders.length; i++) {
     const coffeeType = orders[i].coffeeType;
     if (salesByCoffeeType.coffeeType) { 
-      salesByCoffeeType.coffeeType += calculateOrderPrice(coffeeType);
+      salesByCoffeeType.coffeeType + calculateOrderPrice(coffeeType);
     } else {
       salesByCoffeeType.coffeeType = calculateOrderPrice(coffeeType);
     }
