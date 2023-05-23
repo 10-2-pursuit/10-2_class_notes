@@ -7,6 +7,65 @@
 * 8:00 - 8:10 Break
 * 8:10 - 9:00 Pair - Programming Debug Challenge 
 
+## How To ask for Help 
+1.  Greet the person you're asking poltiely.
+2.  Describe what your are working on - what lab or project?
+3.  Explain the *expected* behavior.
+4.  Explain what the *current* behavior is.
+5.  Explain what you've done to try to fix.
+6.  Paste the code in a code block.
+
+### Examples
+     Bad
+        hey my function dont work
+    
+
+    Better
+        Hey, my function ins't working.  I'm not getting an error or console log.
+```js 
+    fetch('https://api.example.com/data')
+        .then(response => {
+            console.log('Response:', response);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    
+  });
+```
+    Pretty Good 
+        Hey Gigi , having trouble with my `fetch` call.  I'm not seeing the an error message or a console.log.  Any ideas?
+        
+```js
+    fetch('https://api.example.com/data')
+        .then(response => {
+            console.log('Response:', response);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+```
+    Best
+     Hey Gigi and Tim.  My partner and I ran into an issue on the `fecth` function in our JSON lab.
+
+     Function 4 has us make a request to an external API and log the data or an error.
+     Here's our code:
+
+    We're not getting a console.log or an error logged. 
+    We've double checked the api url and its good.
+
+    We know the callbacks are correct.
+ ```js
+    fetch('https://api.example.com/data')
+        .then(response => {
+            console.log('Response:', response);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+```
+
+    
+
 
 ## Today's Lab
 [Collaborative Programming](https://github.com/10-2-pursuit/lab-collaborative-programming)
