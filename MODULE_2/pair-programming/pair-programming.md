@@ -16,12 +16,16 @@
 6.  Paste the code in a code block.
 
 ### Examples
-     Bad
-        hey my function dont work
+
+Bad
+
+    hey my function dont work
     
 
-    Better
-        Hey, my function ins't working.  I'm not getting an error or console log.
+Better
+
+    Hey, my function ins't working.  I'm not getting an error or console log.
+
 ```js 
     fetch('https://api.example.com/data')
         .then(response => {
@@ -32,8 +36,9 @@
     
   });
 ```
-    Pretty Good 
-        Hey Gigi , having trouble with my `fetch` call.  I'm not seeing the an error message or a console.log.  Any ideas?
+Pretty Good 
+       
+     Hey Gigi , having trouble with my `fetch` call.  I'm not seeing the an error message or a console.log.  Any ideas?
         
 ```js
     fetch('https://api.example.com/data')
@@ -44,16 +49,14 @@
         console.error('Error:', error);
     });
 ```
-    Best
-     Hey Gigi and Tim.  My partner and I ran into an issue on the `fecth` function in our JSON lab.
+Best
 
+     Hey Gigi and Tim.  My partner and I ran into an issue on the `fecth` function in our JSON lab.  
      Function 4 has us make a request to an external API and log the data or an error.
+     We're not getting a console.log or an error logged. 
+     We've double checked the api url and its good.
+     We know the callbacks are correct.
      Here's our code:
-
-    We're not getting a console.log or an error logged. 
-    We've double checked the api url and its good.
-
-    We know the callbacks are correct.
  ```js
     fetch('https://api.example.com/data')
         .then(response => {
