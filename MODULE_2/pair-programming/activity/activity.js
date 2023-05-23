@@ -31,7 +31,7 @@ function calculateOrderPrice(order) {
       break;
   }
 
-  return basePrice
+  return basePrice + (order.sugar * .5)
 }
 
 function getCompletedOrders(orders) {
