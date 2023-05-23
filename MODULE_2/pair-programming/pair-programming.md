@@ -53,7 +53,7 @@
 ##  Further Reading
 [Code Academy](https://www.codecademy.com/resources/blog/what-is-pair-programming/)
 [Shopify](https://shopify.engineering/pair-programming-explained)
-Pomodoro Technique()
+[Pomodoro Technique](https://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730)
 
 ## Today's Pairs
 
