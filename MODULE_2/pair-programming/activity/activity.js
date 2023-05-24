@@ -1,6 +1,7 @@
 // fixes import path
 const coffeeOrders = require("./data/coffee");
 // moves return outside of loop scope
+// can also just return orders.length
 function calculateTotalOrders(orders) {
   let total = 0;
   for (let i = 0; i < orders.length; i++) {
