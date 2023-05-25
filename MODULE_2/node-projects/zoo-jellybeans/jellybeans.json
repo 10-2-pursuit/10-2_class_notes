@@ -1,0 +1,62 @@
+[
+    {
+      "name": "Perfumed Savannah",
+      "color": "yellow",
+      "flavorType": "fruity",
+      "inStock": true
+    },
+    {
+      "name": "Agitated Northeast Congo Lion",
+      "color": "fuchsia",
+      "flavorType": "fruity",
+      "inStock": false
+    },
+    {
+      "name": "Royal Australian Draught Horse",
+      "color": "magenta",
+      "flavorType": "spicy",
+      "inStock": true
+    },
+    {
+      "name": "Unselfish Kurilian Bobtail",
+      "color": "turquoise",
+      "flavorType": "salty",
+      "inStock": true
+    },
+    {
+      "name": "Glorious Northeast Congo Lion",
+      "color": "magenta",
+      "flavorType": "nutty",
+      "inStock": false
+    },
+    {
+      "name": "Rotating Silver",
+      "color": "gold",
+      "flavorType": "fruity",
+      "inStock": false
+    },
+    {
+      "name": "Speedy Toyger",
+      "color": "gold",
+      "flavorType": "spicy",
+      "inStock": true
+    },
+    {
+      "name": "Flowery Australian Freshwater Crocodile",
+      "color": "grey",
+      "flavorType": "salty",
+      "inStock": true
+    },
+    {
+      "name": "Upset Chinese River Dolphin",
+      "color": "indigo",
+      "flavorType": "nutty",
+      "inStock": true
+    },
+    {
+      "name": "Smoggy Württemberger",
+      "color": "pink",
+      "flavorType": "savory",
+      "inStock": false
+    }
+  ]
