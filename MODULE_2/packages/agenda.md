@@ -29,7 +29,7 @@
 
 
 ## Dictionary App Planning
-Today is our first in class walkthrough to create a real working application.  You may code along with this walkthrough should you please but keep in mind that most likely we will not have the time to stop and debug your code if your code.  
+Today is our first in class walkthrough to create a real working application.  You may code along with this walkthrough should you please but keep in mind that most likely we will not have the time to stop and debug your code if your code is not working.  If you are stuck sometimes it is best to simply follow along rather than attmept to try to debug your work during the walkthrough.  
 
 **Note** This is our first time implementing `open-source` software.  When working with npm packages it is not important to understand the entire library.  It is our job to find the funcitonality we need and execute the code to the extent that we need it - **NOT** understand the whole thing.
 
