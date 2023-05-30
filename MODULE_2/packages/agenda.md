@@ -43,9 +43,9 @@ This app will have the follwing functionality:
 ### Development Steps
 1.  Set up NPM project and install Dependencies
     - how do we know we've installed everything?
-    - how can we set up a custom script to execute `npm run checkWord  <user input>` so that userInput will be logged to the console 
 2.  Create custom node script to execute function from `index.js`
     - how can we connect our files to execute `spell-check`- from `index.js`?
+    - how can we set up a custom script to execute `npm run checkWord  <user input>` so that userInput will be logged to the console 
 3.  Invoke `simple-spellcheck` to verify spelling of a word in a custom function;
     - Where do we learn how to use `simple-spellcheker`?
     - What are some pseudo-code steps to make this funcitonality?
