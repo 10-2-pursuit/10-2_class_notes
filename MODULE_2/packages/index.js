@@ -8,5 +8,5 @@ function run() {
     // allows us to grab the last value passed when node.js executes the file
     checkWords(process.argv[2]);
 }
-
+// this little function starts our entire application
 run();
