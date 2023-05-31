@@ -1,0 +1,15 @@
+{
+  "name": "10.2_packages",
+  "version": "1.0.0",
+  "description": "spellchecker lecture that checks spelling of user input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "checkword": "node index.js"
+  },
+  "author": "10.2_pursuit",
+  "license": "ISC",
+  "dependencies": {
+    "simple-spellchecker": "^1.0.2"
+  }
+}
