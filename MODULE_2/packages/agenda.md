@@ -14,18 +14,39 @@
 ## Quick Review
 
 - What is a node module? 
+is nothing but a file that can be shared in javascript
 
 - What is NPM?
+Node Package Manager;
+Downloads packages!
+Code CostCo - open source tech repository 
+Version control for dependencies;
+- What is a node Package?
+Just a bundle of code that lives on NPM;
 
 - What is a `package.json`
+its a recipe 
+contians `metadata` about a project - name, version, dependecies, license
 
 - What is the `node_modules` directory?
+the file that holds all of our depedencies;
+when we run `npm install` a node_modules directory is created to hold all of our dependencies
 
 - What does `require()` mean in JS?
+sets a varaible to the result of going and getting functions or data from another file
+importing information from another file
+we want to seperate our code by Concerns - Seperation of Concerns;
 
 - What does `module.exports` mean JS?
+this tells JS what to share with other files;
 
 - What is a `gitignore`?
+tells git what files to ignore;
+it is NOT a javascript file;
+we want to tell git on our local machine not to add our `node_modules` folder.
+1 - all files are on NPM already;
+2 - we want to keep the file as small as possible;
+3 - we might not have permission;
 
 
 ## Dictionary App Planning
