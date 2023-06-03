@@ -1,5 +1,7 @@
 # *topic* *date*
 
+## Quote of The Day
+
 ## Agenda
 * 7:00 - 8:00 
 * 8:00 - 8:30 
