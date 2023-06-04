@@ -25,23 +25,58 @@ function add(a, b) {
 function subtract(a, b) {
     return a - b
 }
+
 module.exports = {
     add,
     subtract
 }
+// { add: add, subtract: subtract }
 ```
+we have a function that adds two numbers and returns
+we have another function that subtracts two numbers and returns it
+on the bottom 
+
+module.exports allows us to export our declared functions -anthony
+Spereation of concerns allow sus to organzie our code
+
+this gives us access to other files in other places - alexander
+
 - How would you import these functions in another file?
+we are destrucutring our object because it was exported as an an object
+
+```js
+  const { 
+    add, 
+    subtract,
+    this, 
+    that, 
+    other 
+  } = require("file_path")
+```
 
 - What is the purpose of NPM?
+npm provides a collection of open-sourced packages that we can use in our projects; - elisaul
 
-- What is a Node.js projcet?
+- What is a Node.js project?
+  A node project is serires of files that run in the NodeJS runtime environment;
+
+  Js Runtime environment is a place where the code is executed;
+  It allows these projects to exist on their computer outside of the browser
+
 
 - How can we tell if we are in a Node Project?
+one way is a the node_modules folder 
+if there is a package.json file 
+
 
 - How can we tell if we have installed our dependencies?
+node_modules;
 
 - What is the file bellow?  What's its purpose
-
+it holds metadata about the project
+jsut gives us information about the project,
+things like dependencies 
+scripts - custom executions for our project 
 ```
 {
   "name": "10.2_packages",
