@@ -45,16 +45,29 @@
  }
 ```
 ## Command Line Crud
-During this lesson we will create a complete application from scratch that will allow us to CRUD a series of resources.  The app will accomplish the following User Stories:
+
+During this lesson we will create a complete application from scratch that will allow us to CRUD a series of resources.  The app will allow users to record a list of animals they've seen and record their points for each animal.
+
+All Applications at their core perform the following actions in some way:
+
+* Capture user input (the 'user' could be another application)
+* Perform some sort of logic based on that input
+* Interact with _some sort of database_
+* Display new information to the user
+
+
+The app will accomplish the following User Stories:
 
 * A user can have a list of animals they've seen
 * A user can create a new animal
 * A user can see the details of a new animal
 * A user can delete an animal
 * A user can update an animal
-* A user can see their score
+* A user can see their score based on the animals they've stored in their DB
 
-This App will make use of the `chalk` package and the `nanoid` packages from NPM.
+This App will make use of the [`chalk`](https://www.npmjs.com/package/chalk) package and the [`nanoid`](https://www.npmjs.com/package/nanoid) packages from NPM.
+
+**Note**: we are installing `chalk@4` and `nanoid@3`.  
 
 ## Steps to Succeed
 Organizing thoughts and structuring the development process is crucial for building any software application. Before coding we need to have a deep understanding of our app's overall file strucutre.  

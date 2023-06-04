@@ -1,9 +1,10 @@
 // this file will be responsible for handling logic to assist our other files
+const fs = require()
 
-
-function readJson(path, nameOfFile) {
-
+function readJson() {
+ 
 }
-function writeJson(path, nameOfFile, data) {
-
+function writeJson() {
+ 
 }
+
