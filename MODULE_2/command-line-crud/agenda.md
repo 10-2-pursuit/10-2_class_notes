@@ -3,10 +3,10 @@
 ## Agenda
 
 * 2:00 - 2:05 Announcments 
-* 2:05 - 2:25 Crud Discussion
-* 2:05 - 4:00 Command Line Crud walkthrough
-* 4:00 - 4:15 Break
-* 4:15 - 6:00 Lab
+* 2:05 - 3:00 JSON lab work
+* 3:0 - 4:30 Command Line Crud walkthrough
+* 4:30 - 4:45 Break
+* 4:45 - 6:00 Lab
 
 ## Quote of The Day
 <br>
@@ -36,6 +36,8 @@
 - What is `chalk`
 
 - What is `nanoid`
+
+- What is a `npm script`
 
 - Describe the following code
 
@@ -103,20 +105,18 @@ Now with an understanding of our strucutre we can build our app using the follow
 
 ## Today's Pairs
 
-1. Ana Torres, Anthony Huarneck
-2. Jalal Jonaid, Brandon Harris
-3. Genesis Lara, Kanique Cox
-4. Nicole Slater, Tonesha Rose
-5. Areebur Rahman, Elisaul Batista
-6. Addis Jackson, Mayi Gomez
-7. Emily Mohr, Franklin Rendon-Ramirez
-8. Jefferson Chua, Kenny Mercedes
-9. Joseph Carter, Erick Martinez
-10. Anile Choice, Erick Tolentino
-11. Davon Bridgett, Winder Joel Marte
-12. Michael Caldwell, Keith Camacho
-13. Shanice Griffin, Aisha Kleemoff
-14. Mikal Wazeerud-Din, Alexander Tsiklidis
-15. Sung Yi, Dwayne Jones
-16. Ruslan Poptsov
-
+1. Davon Bridgett, Joseph Carter
+2. Sung Yi, Areebur Rahman
+3. Franklin Rendon-Ramirez, Ana Torres
+4. Winder Joel Marte, Erick Tolentino
+5.  Aisha Kleemoff, Jalal Jonaid
+6. Genesis Lara,  Nicole Slater
+7. Michael Caldwell, Anile Choice
+8. Mikal Wazeerud-Din, Keith Camacho, 
+9. Alexander Tsiklidis, Anthony Huarneck
+10. Brandon Harris, Dwayne Jones
+11. Shanice Griffin, Addis Jackson
+12. Ruslan Poptsov, Mayi Gomez
+13. Jefferson Chua, Erick Martinez
+14. Emily Mohr, Tonesha Rose
+15. Elisaul Batista, Kanique Cox
