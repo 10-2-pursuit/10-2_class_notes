@@ -1,10 +1,18 @@
 // this file will be responsible for handling logic to assist our other files
-const fs = require()
+const { readFileSync, writeFileSync } = require("node:fs");
 
-function readJson() {
- 
+function readJSONFile(path, fileName) {
+  const object = readFileSync(`${path}/${fileName}`, "utf8");
+  return object ? JSON.parse(object) : [];
 }
-function writeJson() {
- 
+
+function writeJSONFile(path, fileName, data) {
+  data = JSON.stringify(data);
+  return writeFileSync(`${path}/${fileName}`, data, { encoding: "utf-8" });
 }
+
+module.exports = {
+  readJSONFile,
+  writeJSONFile,
+};
 

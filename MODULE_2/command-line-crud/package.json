@@ -10,7 +10,7 @@
     "show": "node index.js show",
     "update": "node index.js update",
     "destroy": "node index.js destroy",
-    "score" : "node index.js score"
+    "score": "node index.js score"
   },
   "keywords": [],
   "author": "",

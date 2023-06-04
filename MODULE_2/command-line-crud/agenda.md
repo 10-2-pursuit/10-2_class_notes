@@ -47,7 +47,6 @@ module.exports = {
 
 During this lesson we will create a complete application from scratch that will allow us to CRUD a series of resources. The app will allow users to record a list of animals they've seen and record their points for each animal.
 
-All Applications at their core perform the following actions in some way:
 
 ## Files
 <div style="display: flex;  border:2px solid">
@@ -84,6 +83,7 @@ All Applications at their core perform the following actions in some way:
 </div>
 
 ## Application Actions
+All Applications at their core perform the following actions in some way:
 <div style="display: flex;  border:2px solid">
 <table >
   <thead>
