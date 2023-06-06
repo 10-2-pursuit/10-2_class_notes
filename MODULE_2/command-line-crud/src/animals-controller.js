@@ -1,7 +1,7 @@
 // this file will organize all the logic that interacts with our animals data
 const { nanoid } = require("nanoid");
 const animalPoints = require("../data/animals-points.json")
-const inform = console.log
+
 // this is where we will create our CRUD logic
 
 // accepts all of our animals from our data and a name from the user
@@ -63,6 +63,7 @@ function update (animals, animalId, updatedAnimal ) {
     }
    
 }
+
 // accepts all of our animals data as an array
 function score (animals) {
     // iterates over the array and combines the points of each animal
