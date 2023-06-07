@@ -12,6 +12,8 @@ const guests = [
 // whats our happy path
 function markGuestAsAttending(guest) {
   if (!guest.name) {
+    // the THROW keyword creates and sends an error out of the scope of this function
+      // if the error is not caught the entire program STOPs
     throw "GUEST NEEDS A NAME DUMMY.";
   }
 
