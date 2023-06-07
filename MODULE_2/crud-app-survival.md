@@ -41,6 +41,8 @@
 ## Tips 
 - Plan your work - If you ask for help and have no Pseudocode our response is going to be 'pseudocode your steps'
 
+- Do your own work.  If you copy code you may move forward but you will not learn what you need to suceed in the next module
+
 - Log each step.  Import some data? console.log() it.  Capture user input? console.log() it.  Import a function?  Console.log() it.  This is the only way we can see what is happening in our work.
 
 - Read your error messages.  Google any messages and take note of the error type and the file that is throwing it;
