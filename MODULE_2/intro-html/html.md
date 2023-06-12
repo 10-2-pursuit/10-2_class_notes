@@ -131,13 +131,9 @@ _"Your comfort zone will get you nowhere"_
 </div>
 
 
-## Pair Activity
-# Pair Programming Project: Building a Personal Website
-
-
-In this pair programming project, you and your partner will work together to create a small website using HTML. The website will showcase information about both of you, including a brief introduction and an image. You'll also explore the use of semantic HTML tags to enhance the structure and meaning of the content.
-
-## Project Requirements
+## Pair Programming Activity : 20 minutes
+In this pair programming activity, you and a random partner will work together to create a small website using HTML. The website will showcase information about both of you, including a brief introduction and an image. You'll also explore the use of semantic HTML tags to enhance the structure and meaning of the content.
+## Requirements
 1. Create an HTML file named `index.html`.
 2. Start by adding the basic structure of an HTML document using the `<!DOCTYPE html>` declaration and `<html>`, `<head>`, and `<body>` tags.
 3. Inside the `<body>` tag, create a header section that includes a heading with the project title.
@@ -148,7 +144,20 @@ In this pair programming project, you and your partner will work together to cre
 5. Use semantic HTML tags to enhance the structure and meaning of the content. For example, you can use `<header>`, `<section>`, `<article>`, `<main>`, and `<footer>` tags appropriately.
 
 
+## Today's Pairs
 
-
-
-
+1. Winder Joel Marte, Anthony Huarneck
+2. Davon Bridgett, Keith Camacho
+3. Addis Jackson, Anile Choice
+4. Dwayne Jones, Kenny Mercedes
+5. Nicole Slater, Jalal Jonaid
+6. Aisha Kleemoff, Kanique Cox
+7. Jefferson Chua, Ana Torres
+8. Ruslan Poptsov, Tonesha Rose
+9. Sung Yi, Franklin Rendon-Ramirez
+10. Joseph Carter, Mayi Gomez
+11. Areebur Rahman, Alexander Tsiklidis
+12. Elisaul Batista, Michael Caldwell
+13. Genesis Lara, Emily Mohr
+14. Shanice Griffin, Mikal Wazeerud-Din
+15. Erick Tolentino
