@@ -1,11 +1,19 @@
-const { writeJSONFile, readJSONFile } = require("./src/helpers");
+const { writeJSONFile, readJSONFile } = require("./src/helpers/fs-helpers")
 
-
+const { 
+  create, 
+  destroy, 
+  updateCoverStory, 
+  index, 
+  show 
+} = require("./src/cia-assets-controller")
 
 function run() {
   const action = process.argv[2];
   const asset = process.argv[3];
-  let assets = readJSONFile("data/assets.json");
+  let assets = readJSONFile("./data", "assets.json")
+  // state
+  let writeToFile = false;
   let updatedAssets = [];
   switch (action) {
     case "index":
@@ -14,6 +22,7 @@ function run() {
       break;
     case "create":
       updatedAssets = create(assets, asset);
+      writeToFile = true;
       break;
     case "show":
       const assetView = show(assets, asset);
@@ -27,7 +36,7 @@ function run() {
       console.log("There was an error.");
   }
   if (writeToFile) {
-    writeJSONFile("data", "assets.js", s);
+    writeJSONFile("data", "assets.json", updatedAssets);
   }
 }
 
