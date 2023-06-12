@@ -6,6 +6,8 @@ Write a  function `isPalindrome` that takes a string as input and returns `true`
 
 For example, the strings "racecar" and "Madam" are palindromes, while "hello" and "OpenAI" are not.
 
+For this problem - assume that the string will be one single word without any special characters or numbers.  
+
 
 ## Testing
 
