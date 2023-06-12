@@ -19,14 +19,3 @@ npm test isPalindrome.test.js
 
 ## Solutions
 
-### Two Pointer (iterative)
-
-#### The Two-Pointer Technique
-
-The two-pointer technique is a common approach used in algorithmic problem-solving, particularly when dealing with arrays, linked lists, or strings. It involves using two pointers or indices to traverse the data structure simultaneously, often from different ends or at different speeds, to perform certain operations efficiently.
-
-<summary>
-
-
-<details>
-
