@@ -1,23 +1,26 @@
-
+const { nanoid } = require("nanoid")
 const { 
     getAssetCodeName,
     getAssetBio,
     getAssetCoverStory
-} = require("./helpers")
+} = require("./helpers/faker-helpers")
 
-
+// takes all our data 
 function create(assets, assetName) {
   const asset = {
-    id: nanoid,
+    id: nanoid(),
     realName: assetName,
-    codeName: getAssetCodeName,
-    bio: getAssetBio,
-    coverStory: getAssetCoverStory
+    codeName: getAssetCodeName(),
+    bio: getAssetBio(),
+    coverStory: getAssetCoverStory()
   };
   assets.push(asset);
+  return assets
 }
 
 function index(assets) {
+  console.log(typeof assets, " < ---- this is assets")
+  console.log(assets, " < ---- this is assets")
   return assets.map((asset) => asset.id + " " + asset.codeName).join("\n");
 }
 
@@ -56,4 +59,10 @@ function updateCoverStory(assets, assetId, updatedCover) {
   }
 }
 
-module.exports = { create, destroy, updateCoverStory, index, show };
+module.exports = { 
+  create, 
+  destroy, 
+  updateCoverStory, 
+  index, 
+  show 
+};
