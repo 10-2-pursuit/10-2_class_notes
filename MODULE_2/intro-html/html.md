@@ -22,19 +22,44 @@ _"Your comfort zone will get you nowhere"_
 ### Guiding Quesitons
 
 - What does HTML stand for?
+  Hypertext Markup Lanugage
+    - markup : simply means that we encode how things are displayed
+
 - How do we create a new html file?
+create any file with an .html extension is html 
+
 
 - What does it mean that HTML is a markup language? How is this different than JavaScript?
 
+html is what is displayed to user; 
+JS handles logic. JS has funcitonality.
+JS integrates with HTML makes them - dynamic
+
+if a website is a house:
+HTML - is the frame
+CSS - is the furniture and the paint
+JS - is the plumbing, the electrical etc.
+
 - What is an HTML element?
+  A special tag, and its contents and attributes;
+  <div class="container"> </div>
+  <a href="pursuit.org">This is a link</a>
+
 
 - What is the purpose of the `DOCTYPE` element?
+tells our browser what type of document we are looking at
 
 - What is the purpose of the `html` element?
 
+wraps our entire document in HTML
+
 - What is the purpose of the `head` element?
+contains metadata - links to CSS etc
+
 
 - What is the purpose of the `body` element?
+
+body tag is what the user sees on the page
 
 - The `head` and `body` elements appear between the opening and closing tags of the `html` element. What is an opening and closing tag?
 
@@ -75,51 +100,51 @@ _"Your comfort zone will get you nowhere"_
   <tbody>
     <tr>
       <td>head</td>
-      <td></td>
+      <td> meta data about the page</td>
     </tr>
     <tr>
       <td>body</td>
-      <td></td>
+      <td> what the user sees on the page</td>
     </tr>
       <td>div</td>
-      <td></td>
+      <td> generic divider - should be avoided for higher level divisoin</td>
     <tr>
     </tr>
     <tr>
       <td>section</td>
-      <td></td>
+      <td> a higher level divider signifying a larger peice of a website</td>
     </tr>
     <tr>
       <td>article</td>
-      <td></td>
+      <td> a divider for tesxt usually with a headline and some text</td>
     </tr>
     <tr>
       <td>aside</td>
-      <td> </td>
+      <td>similar to an article but often smaller and on the side </td>
     </tr>
     <tr>
       <td>ul</td>
-      <td> </td>
+      <td> a list with no order</td>
     </tr>
     <tr>
       <td>ol</td>
-      <td> </td>
+      <td>a numbered list </td>
     </tr>
     <tr>
       <td>li</td>
-      <td> </td>
+      <td>a list item in either a unordered or ordered list</td>
     </tr>
     <tr>
       <td>nav</td>
-      <td> </td>
+      <td>semantic tag that signifies a navbar </td>
     </tr>
     <tr>
       <td>a</td>
-      <td> </td>
+      <td> anchor tag or links to other pages</td>
     </tr>
     <tr>
       <td>img</td>
-      <td> </td>
+      <td> self closing tag that holds the link to an image</td>
     </tr>
     <tr>
       <td>h1,h2,h3,h4,h5,h6</td>
