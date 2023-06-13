@@ -7,12 +7,13 @@ function readJSONFile(path, fileName) {
 }
 
 function writeJSONFile(path, fileName, data) {
+  console.log(data, " before json")
   data = JSON.stringify(data);
+  console.log(data, " after json")
   return writeFileSync(`${path}/${fileName}`, data, { encoding: "utf-8" });
 }
 
-module.exports = {
+module.exports = { 
   readJSONFile,
-  writeJSONFile,
-};
-
+  writeJSONFile
+}
