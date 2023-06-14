@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.2 Forms</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" placeholder="enter name" required>
+       
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" placeholder="enter email" required>
+        <label for="password">password</label>
+        <input type="password"  id="password" name="password" required> 
+        
+        <label for="coder-confidence">Coder-confidence</label>
+        <select id="coder-confidence" name="coder-confidence">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <label for="size">Size</label>
+        <select id="size" name="size">
+            <option value="SM">Small</option>
+            <option value="M">Medium</option>
+            <option value="LG">Large</option>
+        </select>
+
+        <fieldset>
+            <legend>Contact Preference</legend>
+            <label for="emailPreference"> Email</label>
+            <input type="radio" name="contactPreference" id="emailPreference" >
+            <label for="phonePreference"> Phone </label>
+            <input type="radio" name="contactPreference" id="phonePreference" >
+            <label for="noPreference"> Don't talk to me at all </label>
+            <input type="radio" name="contactPreference" id="noPreference" >
+        </fieldset>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+            
+            <label for="comments">Subscribe:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" checked>
+
+
+
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

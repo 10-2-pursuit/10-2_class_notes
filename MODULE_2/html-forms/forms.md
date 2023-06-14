@@ -11,8 +11,10 @@
 * 8:15 - 10:04 Forms lab / flex time
  
 ### Key Terms
-
+ 
 #### Forms
+
+  User interaction - allow us to capture user input;
 
   Forms are essential components of web pages that allow users to input and submit data.
   They provide a structured way to collect information from users, such as registration details, search queries, feedback, and more.
