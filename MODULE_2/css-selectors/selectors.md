@@ -1,5 +1,15 @@
 # CSS Selectors  6/14/23
 
+## Learning Objectives
+
+By the end of this lesson, you should be able to:
+
+- Describe specificity in regards to how CSS applies styles to particular elements.
+- Describe the purpose of the id and class attribute and be able to explain the difference between the two
+- Apply styles to specific elements, classes, or IDs, incorporating descendent selectors.
+- Use grouping to apply styles to multiple elements, classes, or IDs.
+- Style links by using pseudo-classes.
+
 ## Guiding questions
 
 - What is a CSS selector?
