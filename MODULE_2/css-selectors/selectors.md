@@ -3,13 +3,10 @@
 ## Guiding questions
 
 - What is a CSS selector?
-    - A  pattern of elements and/or other terms that tell the browser which HTML elements should be selected to be styled.
-
+   
 - What is an ID? How do you add an ID to an HTML element?
-    - Allow us to classify our HTML elements uniquely and with the highest level of specificity
-    
+
 - What is a class? How do you add a class to an HTML element?
-    - Allows us to give multiple classifications to our HTML elements and style our elements accordingly
 
 - How do you add multiple classes to an HTML element?
 
@@ -62,6 +59,5 @@
   - What CSS selector could you use to affect both the `titanic` and `dracula` classes?
 
 - What is a pseudo-class?
-    - A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.
 
 - What selector would you use to style links when they are being hovered over?
