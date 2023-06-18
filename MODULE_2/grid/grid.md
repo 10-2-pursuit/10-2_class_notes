@@ -6,11 +6,11 @@
 ― Bill Gates
 
 ## Agenda
-* 9:00 - 10:00 CSS selectors lab
-* 10:00 - 11:00 Grid Pair Challenge
-* 10:20 - 11:00 Grid lecture
-* 11:00 - 11:15 Break
-* 11:15 - 1:00 Grid lab / flex time 
+* 9:00 - 10:30 CSS selectors lab
+* 10:30 - 10:50 Grid Pair Challenge
+* 10:50 - 11:50 Grid lecture
+* 11:50 - 12:00 Break
+* 12:00 - 1:00 Grid lab / flex time 
 
 
 
