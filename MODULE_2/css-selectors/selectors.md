@@ -13,13 +13,11 @@ By the end of this lesson, you should be able to:
 ## Guiding questions
 
 - What is a CSS selector?
-    - A  pattern of elements and/or other terms that tell the browser which HTML elements should be selected to be styled.
 
 - What is an ID? How do you add an ID to an HTML element?
-    - Allow us to classify our HTML elements uniquely and with the highest level of specificity
+
     
 - What is a class? How do you add a class to an HTML element?
-    - Allows us to give multiple classifications to our HTML elements and style our elements accordingly
 
 - How do you add multiple classes to an HTML element?
 
