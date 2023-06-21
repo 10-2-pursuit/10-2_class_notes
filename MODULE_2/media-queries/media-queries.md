@@ -71,3 +71,21 @@ desigining mobile layouts first and building out design
     red - the final media query is the one that is activated as it is LAST in the file
   - What color will the `p` text be if the width of the page is 650px?
   red
+
+## Learning Objectives
+
+1. Elisaul Batista, Emily Mohr
+2. Joseph Carter, Mikal Wazeerud-Din
+3. Areebur Rahman, Shanice Griffin
+4. Genesis Lara, Tonesha Rose
+5. Aisha Kleemoff, Jefferson Chua
+6. Sung Yi, Winder Joel Marte
+7. Addis Jackson, Nicole Slater
+8. Michael Caldwell, Keith Camacho
+9. Ana Torres, Mayi Gomez
+10. Dwayne Jones, Davon Bridgett
+11. Alexander Tsiklidis, Erick Tolentino
+12. Ruslan Poptsov, Franklin Rendon-Ramirez
+13. Kanique Cox, Anthony Huarneck
+14. Anile Choice, Jalal Jonaid
+
