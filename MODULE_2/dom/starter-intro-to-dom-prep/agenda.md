@@ -27,9 +27,7 @@
 7. **DOM Traversal**: Navigating the DOM tree to access different elements or nodes.
 
 8. **Attribute Manipulation**: Working with element attributes to provide additional information.
-    
-
-### Putting It All Together
+     
 
 ### DOM CRUD
 Below is a series of helpful dom manipulation methods and their purpose
@@ -160,3 +158,19 @@ Below is a series of helpful dom manipulation methods and their purpose
 </div>
 
 
+### Pairs for Today:
+
+1. Michael Caldwell, Dwayne Jones
+2. Davon Bridgett, Nicole Slater
+3. Shanice Griffin, Sung Yi
+4. Addis Jackson, Emily Mohr
+5. Erick Tolentino, Joseph Carter
+6. Elisaul Batista, Genesis Lara
+7. Kanique Cox, Jefferson Chua
+8. Areebur Rahman, Winder Joel Marte
+9. Anthony Huarneck, Mikal Wazeerud-Din
+10. Franklin Rendon-Ramirez, Ana Torres
+11. Anile Choice, Alexander Tsiklidis
+12. Mayi Gomez, Aisha Kleemoff
+13. Jalal Jonaid, Ruslan Poptsov
+14. Tonesha Rose, Keith Camacho
