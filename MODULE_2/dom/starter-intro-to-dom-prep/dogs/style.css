@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+html {
+  color: #070707;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+header {
+  background: #861657;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  padding: 25px;
+}
+
+header h1 span {
+  font-size: 14px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 25px auto;
+  width: 80%;
+  height: 70vh;
+}
+
+main article {
+  border: 3px solid #a39b8b;
+  padding: 25px;
+  text-align: center;
+}
+
+main article img {
+  border: 5px solid #a39b8b;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #a39b8b;
+  height: 150px;
+  object-fit: cover;
+  width: 150px;
+}
+
+main article.featured,
+main article.featured img {
+  border-color: #861657;
+}
+
+img.animated {
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+}
+
+img.animated:hover {
+  border-radius: 0px;
+}
