@@ -6,39 +6,49 @@ p {
 
 .container {
     display: grid;
- 
-}
+    gap:10px;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-areas:
+    "h h h h h"
+    "n n n n n"
+    "l m m m r"
+    "f f f f f"
+ }
 
 .container p {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 .header{
-   
+  grid-area: h;
+  height: 150px;
 }   
 
 .nav {
-  
-
+  grid-area: n;
+  height:75px
 }
 
 .content-row {
- 
+ height: 300px;
 }
 .main{
-  
-
+  grid-area: m;
 }
 
 
 .left-content{
-   
-
+   grid-area: l;
 }
 
 .right-content{
- 
+ grid-area:r
 }
 
 .footer{
-   
+   grid-area: f;
+   height:150px
 }

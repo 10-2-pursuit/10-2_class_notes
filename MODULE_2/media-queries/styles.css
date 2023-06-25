@@ -1,0 +1,49 @@
+.container {
+    padding:20px;
+    border:2px solid red;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px ;
+    gap:15px
+    
+}
+.box {
+    background-color: bisque;
+    border:black 2px solid;
+}
+
+
+@media (max-width: 499px) {
+   body {
+    background-color: gray;
+   }
+    
+}
+
+@media (min-width: 1200px){
+    .box {
+        border: purple 1px solid ;
+    }
+}
+
+@media (min-width: 760px) and (max-width:1000px){
+    .box{
+        border-color: aqua;
+    }
+}
+
+p {
+    color: green;
+}
+  
+  @media (min-width: 800px) {
+    p {
+      color: blue;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    p {
+      color: red;
+    }
+  }
