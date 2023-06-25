@@ -20,6 +20,11 @@ function contactTemplate(name, telephone, email, notes) {
     li.append(document.createElement("br"), strong, notes);
   }
 
+  const remove = document.createElement("button")
+  remove.innerText = "Remove Contact"
+  console.log(remove)
+  li.append(remove)
+
   return li;
 }
 
