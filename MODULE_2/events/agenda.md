@@ -96,3 +96,21 @@ Finally, update your code so that the minimum number of hearts possible is one, 
 Is any DOM manipulation needed to add this feature?
 
 - Take a look at your code. Is there any duplication? Any helper functions that could be created from what you've accomplished? Any patterns you notice?
+
+
+## Pairs For Today
+
+1. Davon Bridgett, Mikal Wazeerud-Din
+2. Anile Choice, Keith Camacho
+3. Addis Jackson, Elisaul Batista
+4. Ruslan Poptsov, Sung Yi
+5. Mayi Gomez, Jalal Jonaid
+6. Areebur Rahman, Jefferson Chua
+7. Nicole Slater, Emily Mohr
+8. Erick Tolentino, Ana Torres
+9. Kanique Cox, Genesis Lara
+10. Alexander Tsiklidis, Anthony Huarneck
+11. Joseph Carter, Michael Caldwell
+12. Tonesha Rose, Winder Joel Marte
+13. Dwayne Jones, Shanice Griffin
+14. Aisha Kleemoff, Franklin Rendon-Ramirez
