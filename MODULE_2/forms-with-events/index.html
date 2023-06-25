@@ -30,7 +30,22 @@
           <label for="email">Contact Email</label>
           <input id="email" name="email" type="email" />
           <label for="notes">Notes</label>
-          <textarea type="notes"></textarea>
+          <textarea id="notes" name="notes" type="notes"></textarea>
+          <fieldset>
+            <legend>Relationship type</legend>
+            <label for="friend">Friend
+              <input id="friend" name="relationship" type="radio" value="friend" checked/>
+            </label>
+            <label for="family">Family
+              <input id="family" name="relationship" type="radio" value="family"/>
+            </label>
+            <label for="coworker">Coworker
+              <input id="coworker" name="relationship" type="radio" value="coworker"/>
+            </label>
+            <label for="other">Other
+              <input id="other" name="relationship" type="radio" value="other"/>
+            </label>
+          </fieldset>
 
           <button type="submit">Create Contact</button>
         </form>
