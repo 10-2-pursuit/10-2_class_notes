@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Playfair+Display&display=swap");
+
+html,
+body {
+  color: #46494c;
+  font-family: "EB Garamond", serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+header {
+  background: #46494c;
+  border-bottom: 3px solid #73956f;
+  color: #f7f7f7;
+}
+
+header h1 {
+  padding: 25px;
+}
+
+header h1 span {
+  font-family: "EB Garamond", serif;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+main {
+  margin: 25px auto;
+  width: 80%;
+}
+
+.new-contact-form {
+  border-bottom: 3px solid #73956f;
+  padding: 25px 0;
+}
+
+.new-contact-form h2 {
+  margin: 0;
+}
+
+form input,
+form label,
+form textarea {
+  box-sizing: border-box;
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+}
+
+form input,
+form textarea {
+  border: 1px solid #73956f;
+  padding: 8px;
+}
+
+form button[type="submit"],
+button {
+  background: #73956f;
+  border: none;
+  border-radius: 5px;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+form button[type="submit"]:hover,
+button:hover {
+  background: #46494c;
+}
+
+.required {
+  color: #73956f;
+}
+
+.contacts h2 {
+  margin: 25px 0 0;
+}
+
+.contacts ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.contacts ul li {
+  border-bottom: 1px solid #73956f;
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts ul li:last-child {
+  width: 80%;
+}
+
+/* form div {
+  display: flex;
+  justify-content: space-around;
+} */
+
+/* form div label {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid gold;
+} */
+
+input[type="radio"] {
+  border: 1px solid plum;
+}
