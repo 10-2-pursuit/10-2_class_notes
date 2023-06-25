@@ -15,7 +15,9 @@ function contactTemplate(name, telephone, email, notes) {
   }
 
   if (notes) {
-    li.append(document.createElement("br"), notes);
+    const strong = document.createElement("strong");
+    strong.textContent = "Notes: ";
+    li.append(document.createElement("br"), strong, notes);
   }
 
   return li;
