@@ -25,8 +25,8 @@ Below is a helpful guide to assist in organizing your working process.
 
 2. **HTML Structure**
    - Create basic HTML structure including `<header>` that displays title, a contianer `<div>` to display resources, `<form>` element for user to input new reousrces  
-   - Choose your Resource - model your resource (books, recipee, shoes) to have three fields inluding __inStock__, price, name, and one other resource of your choosing 
-   - Inside the container create one resource with fields of your choice in each resource element.  Use this field to build and test your functionality.  Add more resources ince everything is stlyed and functional.
+   - Choose your Resource - model your resource (books, recipee, shoes) to have three fields inluding __inStock__, price, name, and two other resource of your choosing 
+   - Inside the container create one resource with fields of your choice in each resource element.  Use this field to build and test your functionality.  Add more resources once everything is stlyed and functional.
 
 3. **Form Setup**
    - Add a form at the bottom of the page to allow users to add new resources.
