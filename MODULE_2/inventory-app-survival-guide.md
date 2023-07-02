@@ -7,11 +7,6 @@ If you are stuck, or need help it is __essential__ that you __ask for help__.
 
 __You must Own Your Pursuit__ .  If you do not understand a topic, this is where we learn it.
 
-
-
-
-
-
 ### Steps to Complete the HTML Inventory App
 
 Below is a helpful guide to assist in organizing your working process.
