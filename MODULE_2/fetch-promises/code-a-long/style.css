@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto&display=swap");
+
+html,
+body {
+  color: #46494c;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #ff595e;
+  border-bottom: 3px solid #565656;
+  color: #fffafb;
+}
+
+header h1 {
+  padding: 25px;
+}
+
+header h1 span {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+header a,
+a:hover {
+  color: #fffafb;
+}
+
+main {
+  margin: 25px auto;
+  text-align: center;
+  width: 80%;
+}
+
+form {
+  border-bottom: 2px solid #46494c;
+  padding: 25px;
+}
+
+form input {
+  border: 1px solid #ff595e;
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+}
+
+form button {
+  background: #46494c;
+  border: 1px solid #565656;
+  border-radius: 5px;
+  color: #fffafb;
+  font-family: "Roboto", sans-serif;
+  font-size: 15pxpx;
+  padding: 10px;
+}
+
+.error {
+  border: 3px solid #ff595e;
+  margin-top: 25px;
+  padding: 25px;
+}
+
+.error .message {
+  color: #ff595e;
+}
+
+.pokemon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pokemon article {
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+}
+
+.pokemon h2 {
+  font-size: 16px;
+}
+
+.pokemon img {
+  border: 3px solid #ff595e;
+  border-radius: 50%;
+  height: 250px;
+  object-fit: cover;
+  width: 250px;
+}
