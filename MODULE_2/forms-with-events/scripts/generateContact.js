@@ -33,4 +33,6 @@ function generateContact(name, telephone, email, notes) {
 
   const ul = document.querySelector("ul");
   ul.append(li);
+  
+
 }
