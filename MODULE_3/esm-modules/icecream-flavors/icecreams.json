@@ -1,0 +1,62 @@
+[
+    {
+      "flavor": "Vanilla Ice to Meet You",
+      "color": "White",
+      "flavorType": "Sweet"
+    },
+    {
+      "flavor": "Choco-lot of Love",
+      "color": "Brown",
+      "flavorType": "Bittersweet"
+    },
+    {
+      "flavor": "Strawberry Short Circuit",
+      "color": "Pink",
+      "flavorType": "Fruity"
+    },
+    {
+      "flavor": "Mint Condition",
+      "color": "Green",
+      "flavorType": "Sweet and Salty"
+    },
+    {
+      "flavor": "Espresso Yourself",
+      "color": "Dark Brown",
+      "flavorType": "Umami"
+    },
+    {
+      "flavor": "Rasp-beary Spicy",
+      "color": "Red",
+      "flavorType": "Spicy"
+    },
+    {
+      "flavor": "Salted Caramelicious",
+      "color": "Golden Brown",
+      "flavorType": "Sweet and Salty"
+    },
+    {
+      "flavor": "Blueberry Thrill",
+      "color": "Blue",
+      "flavorType": "Fruity"
+    },
+    {
+      "flavor": "Pistach-YO!",
+      "color": "Light Green",
+      "flavorType": "Bittersweet"
+    },
+    {
+      "flavor": "Coco-nutty Fun",
+      "color": "Off-White",
+      "flavorType": "Sweet"
+    },
+    {
+      "flavor": "Lemon Laughs",
+      "color": "Yellow",
+      "flavorType": "Fruity"
+    },
+    {
+      "flavor": "Pumpkin Spice and Everything Nice",
+      "color": "Orange",
+      "flavorType": "Spicy"
+    }
+  ]

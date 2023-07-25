@@ -1,0 +1,14 @@
+{
+  "name": "icecream-flavors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mythical": "echo 'My favorite mythical creature is a liger'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
