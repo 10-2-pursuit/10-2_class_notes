@@ -2,8 +2,11 @@ import React from 'react';
 // we COULD pass props here to then interpolate to our li
 const List = () => {
     return (
-        // jsx fragment
+        // the `<>` below is a JSX fragment - it allows us to wrap our 
+        // components return value in an element without adding a new dom
+        // element
         <>
+        
             <li>
                 <a href="#">About</a>
             </li>
