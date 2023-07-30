@@ -18,7 +18,7 @@
 
 Synchronous code is like following a recipe step by step. When you execute synchronous code, each task is completed before moving on to the next one. It's like cooking a meal where you can't start chopping vegetables until you finish washing them. The program waits for each task to complete before moving forward.
 
-Synchronous code is like sending multiple requests at a drive-through restaurant. You place your order and move on to the next task while waiting for your order to be prepared. Asynchronous code allows you to initiate a task and move on to other tasks without waiting for the first task to finish. When the first task completes, it notifies you or triggers a callback function to handle the result.
+Asynchronous code is like sending multiple requests at a drive-through restaurant. You place your order and move on to the next task while waiting for your order to be prepared. Asynchronous code allows you to initiate a task and move on to other tasks without waiting for the first task to finish. When the first task completes, it notifies you or triggers a callback function to handle the result.
 
 ### Promises
 a JavaScript Promise is like a special container for an action that hasn't happened yet, but will happen sometime in the future. It's like a promise you make to someone, saying, "I will do this for you, and when I'm done, I'll let you know."

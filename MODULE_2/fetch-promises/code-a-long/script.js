@@ -5,10 +5,35 @@ const input = document.querySelector("input");
 const pokemon = document.querySelector(".pokemon");
 
 button.addEventListener("click", (e) => {
-
+    e.preventDefault();
+    const id = input.value;
+    fetch(`${BASE_URL}/${id}`)
+        .then(data => data.json())
+        .then(json => {
+            showPokemon(json)
+        })
+        .catch(err => showError(err))
 });
 // documentation here: https://pokeapi.co/
 
+// firesin the event we have success!
+const showPokemon = (json) => {
+    pokemon.innerHTML = `
+    <article>
+        <img src="${json.sprites.front_shiny}" alt=${json.name} />
+        <h2>${json.name}</h2>
+    </article>
+`
+}
+// this function will fire in the event that we have an error
+const showError = (err) => {
+   pokemon.innerHTML =  `
+   <section class="error">
+        <p>There was an error!</p>
+        <p class="message">${err}</p>
+    </section>
+`
+}
 // Let's fetch some data
 
 // check the pokeapi docs.  What URL should you request data for a Pokemon named "Ditto"?

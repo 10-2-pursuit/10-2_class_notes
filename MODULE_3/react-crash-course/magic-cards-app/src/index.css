@@ -1,0 +1,81 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 90vh;
+  max-height:90vh
+}
+
+.card-list-container {
+  border: 2px solid white;
+  grid-area: c;
+  overflow: scroll;
+  max-height: 75vh;
+}
+.card-body {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding: 15px;
+    overflow: hidden;
+    align-content: flex-end;
+    align-items: center;
+}
+.card-container {
+  border:#cfcfcf 5px solid;
+  margin:20px;
+ }
+ .card-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding:5px 20px
+ }
+.app-container {
+  display:grid;
+  grid-template-areas: "m m  c";
+  grid-template-columns: repeat(3, 1fr);
+  max-height:80vh
+}
+.main-display-container {
+border:5px solid #cfcfcf;
+  grid-area: m;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+h1 {
+  font-size: 3.25rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.125rem;
+}
