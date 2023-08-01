@@ -14,11 +14,11 @@ const CardList = (props) => {
   return (
     <div className="card-list-container">
       <h2>Cards</h2>
-      { props.allCards.map((card) => (
+      { props.allCards.map((card, index) => (
         <Card 
         allCards = { props.allCards }
         card = { card }
-        key = {card.name}
+        key = { index }
         setSelectedCard = { setSelectedCard }
         />
       ) )}
