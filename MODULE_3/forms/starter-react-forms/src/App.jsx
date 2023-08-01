@@ -3,15 +3,10 @@ import { useState } from "react";
 import DogDetails from "./DogDetails";
 
 import { v1 as generateUniqueID } from "uuid";
-
+// we n
 function App() {
   const [dogs, setDogs] = useState(dogsData);
   const [showNewDogForm, setNewDogForm] = useState(false);
- 
-
-  const handleTextChange = (e) => {
-    setUserInput(e.target.value);
-  }
   const [ newDog, setNewDog ] = useState({
     id: "",
     name: "",
@@ -23,23 +18,25 @@ function App() {
     contact: "",
   });
 
-  function addDog() {
-    const rover = {
-      id: generateUniqueID(),
-      name: "Rover",
-      present: false,
-      grade: 100,
-      notes: "The goodest new dog",
-      age: 5,
-      likesSwimming: true,
-      favFlavor: "beef",
-      contact: "r0v3r@yoyodyne.io",
-    };
-    setDogs([rover, ...dogs]);
+  const handleCheckboxChange = () => {
+    setChecked(!checked)
   }
 
-  // function handleTextChange(event) {}
+  function handleSubmit() {
+  
+  }
+  const handleTextChange = () => { 
+ 
+  }
+  const handleSelectChange = () => {
 
+  }
+  
+  function addDog() {
+ 
+    setDogs([rover, ...dogs]);
+  }
+  
   function removeDog(dogID) {
     const filteredDogArray = dogs.filter((dog) => dog.id !== dogID);
     setDogs(filteredDogArray);
@@ -55,9 +52,12 @@ function App() {
     dogArray[index].present = !dogArray[index].present;
     setDogs(dogArray);
   }
+
+
+
+
   return (
     <div className="App">
-
       <header>
         <h1> Bark and Bowl Doggy Day Care</h1>
       </header>
@@ -67,7 +67,7 @@ function App() {
             {showNewDogForm ? "hide form" : "Add a new dog"}
           </button>
           {showNewDogForm ? (
-            <form>
+            <form onSubmit={handleSubmit}>
               <label htmlFor="name">Name:</label>
               <input
                 type="text"
@@ -93,7 +93,7 @@ function App() {
                 value={newDog.contact}
               />
               <label htmlFor="favFlavor">Favorite flavor:</label>
-              <select id="favFlavor">
+              <select id="favFlavor" onChange={ handleSelectChange }>
                 <option value=""></option>
                 <option value="beef">Beef</option>
                 <option value="chicken">Chicken</option>
@@ -101,7 +101,7 @@ function App() {
                 <option value="bacon">Bacon</option>
               </select>
               <label>Likes swimming:</label>
-              <input type="checkbox" />
+              <input type="checkbox" onChange={handleCheckboxChange} />
               <br />
               <input type="submit" />
             </form>

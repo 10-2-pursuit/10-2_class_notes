@@ -1,8 +1,8 @@
 # Forms in React 8/1/2023
 
 ## Quote of The Day
-“If you don't love yourself, how in the hell you gonna love somebody else?”
-― Her Royal Highness, RuPaul
+“The truth will set you free. But not until it is finished with you.”
+― David Foster Wallace
 
 ## Agenda
 * 7:00 - 7:15 - Agenda / Group Code examination
