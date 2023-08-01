@@ -28,9 +28,9 @@
 9. Joseph Carter, Emily Mohr
 10. Winder Joel Marte, Anthony Huarneck
 11. Jalal Jonaid, Anile Choice
-12. Addis Jackson, Aisha Kleemoff
+12. Addis Jackson, Sung Yi
 13. Erick Tolentino, Shanice Griffin
-14. Sung Yi
+
 
 
 
