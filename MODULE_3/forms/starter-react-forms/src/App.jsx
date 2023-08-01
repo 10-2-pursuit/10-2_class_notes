@@ -7,12 +7,12 @@ import { v1 as generateUniqueID } from "uuid";
 function App() {
   const [dogs, setDogs] = useState(dogsData);
   const [showNewDogForm, setNewDogForm] = useState(false);
-  const [userInput, setUserInput] = useState("");
+ 
 
   const handleTextChange = (e) => {
     setUserInput(e.target.value);
   }
-  const [newDog, setNewDog] = useState({
+  const [ newDog, setNewDog ] = useState({
     id: "",
     name: "",
     present: false,
