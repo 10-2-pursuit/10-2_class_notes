@@ -4,6 +4,8 @@ import CardImage from "./CardImage";
 const Card = (props) => {
   const { name, imageUrl, originalText, originalType, color} = props.card;
   const setSelectedCard = props.setSelectedCard
+  // short circuit 
+  // if no value is passed props.imageWidth is 'undefined'
   const imageWidth = props.imageWidth || '150px'
 
   const handleClick = (e) => {
@@ -14,6 +16,7 @@ const Card = (props) => {
     })
     // this function is still wired up to update the state in APP
     // app then passes it to MainDisplay and we see the update
+    // lifting state 
     setSelectedCard(selectedCard)
   }
 
@@ -25,7 +28,7 @@ const Card = (props) => {
           <h2>{name}</h2>
           <h3>{originalType}</h3>
           <p>{originalText}</p>
-          <button id={name}  onClick={ handleClick }>select</button>
+          <button id={ name }  onClick={ handleClick }>select</button>
         </div>
       </div>
     </div>
