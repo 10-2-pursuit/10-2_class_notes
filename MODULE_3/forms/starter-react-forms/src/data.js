@@ -44,3 +44,6 @@ export const dogsData = [
     contact: "baconBaconBacon@yoydyne.io",
   },
 ];
+
+
+export const student = "Jalal"
