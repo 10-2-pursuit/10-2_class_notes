@@ -58,6 +58,23 @@ body {
   grid-template-columns: repeat(3, 1fr);
   max-height:80vh
 }
+.controls-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:80%;
+  margin:0 auto;
+  list-style-type: none;
+  align-items: start;
+}
+
+.controls-header {
+  text-align: left;
+}
+
+.controls-list-container {
+  display:flex;
+}
 .main-display-container {
 border:5px solid #cfcfcf;
   grid-area: m;
@@ -65,6 +82,7 @@ border:5px solid #cfcfcf;
   flex-direction: column;
   justify-content: center;
 }
+
 
 
 h1 {

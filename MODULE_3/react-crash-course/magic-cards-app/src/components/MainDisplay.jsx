@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "./Card";
+import ControlsContainer from "./ControlsContainer";
 // object oriented programming - everything is an object
 // { state: true, wheels: 4 }
 // class MainDisplay extends Component {
@@ -18,16 +19,26 @@ import Card from "./Card";
 
 const MainDisplay = (props) => {
   
-  const selected = props.selectedCard;
-
-  return selected ? (
+  const { selectedCard, allCards, setSelectedCard} = props
+  
+  return selectedCard ? (
     <div className="main-display-container">
-        <h1>{ selected.name }</h1>
-      <Card card ={ selected } imageWidth = '350px'/>
+        <h1>{ selectedCard.name }</h1>
+
+        <div>
+        </div>  
+      <Card 
+      card ={ selectedCard } 
+      isSelectedCard = { true } 
+      imageWidth = '350px'
+      allCards = {allCards}
+      setSelectedCard = {setSelectedCard}
+      />
     </div>
   ) : (
     <div>
       <h1>no card selected</h1>
+      
     </div>
   );
 };
