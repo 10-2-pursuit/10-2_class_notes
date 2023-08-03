@@ -2,7 +2,7 @@ import Card from "./Card";
 
 const CardList = (props) => {
 
-  console.log(props.allCards);
+  console.log(props.displayedCards);
   const setSelectedCard = props.setSelectedCard
   // JSX things to remember
   // we cannot use statements - only epxressions
@@ -13,10 +13,10 @@ const CardList = (props) => {
   // above is a strange way of declaring two varaibles that are returned from one useState call
   return (
     <div className="card-list-container">
-      <h2>Cards</h2>
-      { props.allCards.map((card, index) => (
+      <h2>Displaying {props.displayedCards.length} Cards</h2>
+      { props.displayedCards.map((card, index) => (
         <Card 
-        allCards = { props.allCards }
+        displayedCards = { props.displayedCards }
         card = { card }
         key = { index }
         setSelectedCard = { setSelectedCard }
