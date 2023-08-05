@@ -11,7 +11,7 @@ const Card = (props) => {
   const handleClick = (e) => {
     const cardName = e.target.id;
     // this is our ENTIRE CARD OBJECT from our cards array
-    const selectedCard = props.allCards.find((card) => {
+    const selectedCard = props.displayedCards.find((card) => {
         return card.name === cardName
     })
     // this function is still wired up to update the state in APP
