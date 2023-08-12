@@ -1,9 +1,8 @@
-import Card from "./Card";
+import MagicCard from "./Card";
 
 const CardList = (props) => {
-
   console.log(props.displayedCards);
-  const setSelectedCard = props.setSelectedCard
+  const setSelectedCard = props.setSelectedCard;
   // JSX things to remember
   // we cannot use statements - only epxressions
   // expressions resolve to a value - statements do not
@@ -14,14 +13,14 @@ const CardList = (props) => {
   return (
     <div className="card-list-container">
       <h2>Displaying {props.displayedCards.length} Cards</h2>
-      { props.displayedCards.map((card, index) => (
-        <Card 
-        displayedCards = { props.displayedCards }
-        card = { card }
-        key = { index }
-        setSelectedCard = { setSelectedCard }
+      {props.displayedCards.map((card, index) => (
+        <MagicCard
+          displayedCards={props.displayedCards}
+          card={card}
+          key={index}
+          setSelectedCard={setSelectedCard}
         />
-      ) )}
+      ))}
     </div>
   );
 };

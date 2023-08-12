@@ -3,7 +3,7 @@ import { useState } from 'react';
 // of rendering the inputs for our state updating
 
 
-const Controlls = ({filterDisplayedCards, getNewCards, setSelectedCard }) => {
+const Controlls = ({ filterDisplayedCards, getNewCards, setSelectedCard }) => {
     const [selectedType, setSelectedType] = useState("");
 
     const handleSelect = (e) => {
@@ -34,9 +34,9 @@ const Controlls = ({filterDisplayedCards, getNewCards, setSelectedCard }) => {
         "Vanguard",
       ];
     return (
-        <div>
+        <div >
             <h1>Controls</h1>
-            <ul>
+            <ul className='controls-container'>
                 <li>
                     <label htmlFor='select-type'></label>
                     <select id="select-type" onChange={handleSelect}>
