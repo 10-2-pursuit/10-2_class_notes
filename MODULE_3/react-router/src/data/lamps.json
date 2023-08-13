@@ -1,0 +1,124 @@
+[
+    {
+        "name": "Lemieux et Cic",
+        "style": "New Traditional",
+        "type": "Ceiling",
+        "price":"1000",
+        "image": "https://i.imgur.com/ruVd2Tr.png",
+        "id": "1"
+    },
+    {
+        "name": "Optimist",
+        "style": "Modern",
+        "type": "Table",
+        "price":"500",
+        "image": "https://i.imgur.com/vPu6scG.png",
+        "id": "2"
+    },
+    {
+        "name": "Possini Euro Branches",
+        "style": "New Traditional",
+        "type": "Ceiling",
+        "price":"1500",
+        "image": "https://i.imgur.com/tD1WHgP.png",
+        "id": "3"
+    },
+    {
+        "name": "Racoon",
+        "style": "Quirky",
+        "type": "Table",
+        "price":"150",
+        "image": "https://i.imgur.com/VUepj03.png",
+        "id": "4"
+    },
+    {
+        "name": "Ripple",
+        "style": "Modern",
+        "type": "Ceiling",
+        "price":"150",
+        "image": "https://i.imgur.com/SI0Xpeq.png",
+        "id": "5"
+    },
+    {
+        "name": "Tiffany Lillies",
+        "style": "Tiffany",
+        "type": "Table",
+        "price":"200000",
+        "image": "https://i.imgur.com/FeRW1VI.png",
+        "id": "6"
+    },
+    {
+        "name": "Trento",
+        "style": "Modern",
+        "type": "Ceiling",
+        "price":"899",
+        "image": "https://i.imgur.com/KV5DTS5.png",
+        "id": "7"
+    },
+
+    {
+        "name": "Lite Source Kyle Black Metal Modern LED",
+        "style": "Modern",
+        "type": "Floor",
+        "price":"109",
+        "image": "https://i.imgur.com/eWX1isn.png",
+        "id": "28"
+    },
+    {
+        "name": "Orbital Cue",
+        "style": "Modern",
+        "type": "Floor",
+        "price":"109",
+        "image": "https://i.imgur.com/FhrTTzd.png",
+        "id": "29"
+    },
+    {
+        "name": "Overarching Acrylic Shade",
+        "style": "Modern",
+        "type": "Floor",
+        "price":"399",
+        "image": "https://i.imgur.com/6ox4kCO.png",
+        "id": "30"
+    } ,  
+    {
+        "name": "Pink Feather Gold Floor Lamp Unique Standing Tree",
+        "style": "Modern",
+        "type": "Floor",
+        "price":"199",
+        "image": "https://i.imgur.com/QHsREDY.png",
+        "id": "31"
+    }  , 
+    {
+        "name": "Mirodemi Luxury Gold Modern Parrot Floor Lamp",
+        "style": "Modern",
+        "type": "Floor",
+        "price":"399",
+        "image": "https://i.imgur.com/aTpU9Hy.png",
+        "id": "32"
+    } ,
+    {
+        "name": "Artiva Phuket 2 Light Rattan Handcrafted Twist",
+        "style": "Modern",
+        "type": "Floor",
+        "price":"399",
+        "image": "https://i.imgur.com/HtTaeMu.png",
+        "id": "33"
+    } ,
+    {
+        "name": "Post Modern Floor Human Face LED Standard Lamp",
+        "style": "Modern",
+        "type": "Floor",
+        "price":"525",
+        "image": "https://i.imgur.com/Mm8SQaN.png",
+        "id": "333"
+    } ,
+    {
+        "name": "Minimal Line",
+        "style": "Modern",
+        "type": "Floor",
+        "price":"109",
+        "image": "https://i.imgur.com/6X748GJ.png",
+        "id": "27"
+    }
+]
+

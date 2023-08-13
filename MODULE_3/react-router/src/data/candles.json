@@ -1,0 +1,34 @@
+[   {
+    "name": "Beeswax",
+    "style": "Natural",
+    "type": "Decorative",
+    "price":"88",
+    "image": "https://i.imgur.com/SxkKQB9.png",
+    "id": "8"
+},
+{
+    "name": "Birthday",
+    "style": "Classic",
+    "type": "Celebratory",
+    "price":"5",
+    "image": "https://i.imgur.com/bADMbys.png",
+    "id": "9"
+},
+{
+    "name": "Flameless",
+    "style": "New Traditional",
+    "type": "Flameless",
+    "price":"18",
+    "image": "https://i.imgur.com/vcire9i.png",
+    "id": "10"
+},
+{
+    "name": "Terranium",
+    "style": "Quirky",
+    "type": "Decorative",
+    "price":"48",
+    "image": "https://i.imgur.com/tuVc7Vy.png",
+    "id": "111"
+}
+
+]
