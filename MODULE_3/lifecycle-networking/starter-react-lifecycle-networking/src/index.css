@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  height: 100vh;
+  /* background-color: lightyellow; */
+}
+
+/* * {
+  border: 1px solid gold;
+} */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+.date {
+  grid-area: date;
+
+  border: 4px solid gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lucky {
+  grid-area: lucky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid palegoldenrod;
+}
+.vibe {
+  grid-area: vibe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 8px solid yellow;
+}
+.vibe input {
+  max-width: 50%;
+}
+.dog {
+  grid-area: dog;
+  /* background-color: palegoldenrod; */
+  border: 8px solid lightyellow;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3);
+  grid-auto-rows: minmax(18vh, auto);
+  grid-template-areas:
+    "date lucky lucky"
+    "date vibe vibe"
+    "dog dog dog"
+    "dog dog dog"
+    "dog dog dog";
+  text-align: center;
+}
+
+img {
+  max-width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    border: 3px solid indigo;
+    grid-template-areas:
+      "date date date"
+      "lucky lucky lucky"
+      "vibe vibe vibe"
+      "dog dog dog"
+      "dog dog dog"
+      "dog dog dog";
+  }
+}
