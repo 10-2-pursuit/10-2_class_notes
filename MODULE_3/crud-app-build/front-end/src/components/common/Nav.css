@@ -1,0 +1,51 @@
+header {
+  align-items: center;
+  background: var(--primary);
+  display: flex;
+  padding: 25px 15% 35px;
+}
+
+header article,
+header nav {
+  width: 50%;
+}
+
+header h1 {
+  height: auto;
+  margin: 0;
+  font-size: 36px;
+}
+
+header h1 span {
+  font-weight: 300;
+}
+
+header h1 a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  padding: 0 25px;
+}
+
+header ul li a {
+  color: var(--light);
+  border-bottom: 2px solid var(--light);
+  font-weight: 500;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: var(--dark);
+  border-bottom: 2px solid var(--dark);
+}
