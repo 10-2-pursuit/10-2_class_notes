@@ -1,9 +1,13 @@
-import { useState } from "react";
-
+import { useState  } from "react";
+import { createShow } from "../../api/fetch";
+import { useNavigate } from "react-router-dom";
 import "./ShowsForm.css";
 
 export default function ShowsForm() {
+  // setting state for show - default as an very specific object
   const [show, setShow] = useState({
+    // data normalization - we are designing an input that will corespond
+    // to how the api sctructures its DATA
     type: "",
     title: "",
     country: "",
@@ -15,11 +19,33 @@ export default function ShowsForm() {
     releaseYear: "",
   });
 
-  function handleSubmit(event) {}
+  const navigate = useNavigate();
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    // send the data to the server from our State
+    createShow(show)
+      .then((createdShow) => {
+        console.log(createdShow)
+        alert(`show created: ${createdShow.title} id : ${createdShow.id}`)
+        // we got the id in the response
+        // and passed it to useNavigate to satisfy our shows/:id route
+        navigate(`/shows/${createdShow.id}`)
+      })
+      .catch((err) => {
+        console.error(err)
+      })
+
+  }
+  // this function a change in some text input
+  // this is veeeeeeeeeerrry slick
   function handleTextChange(event) {
+    // event is passed from React's change detection
     setShow({
       ...show,
+      // passing the id from the event as the key to the object
+      // passing the value from the event as the OBJECTS's value
+      // "title" : "whatever value in in the input"
       [event.target.id]: event.target.value,
     });
   }

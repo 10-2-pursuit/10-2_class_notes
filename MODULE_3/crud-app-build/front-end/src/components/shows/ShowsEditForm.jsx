@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./ShowsForm.css";
-
+import { getOneShow, updateShow } from "../../api/fetch";
+import { useParams, useNavigate } from "react-router-dom";
 export default function ShowsForm() {
+  // we are setting state for a blank show object
   const [show, setShow] = useState({
     type: "",
     title: "",
@@ -13,8 +15,29 @@ export default function ShowsForm() {
     rating: "",
     releaseYear: "",
   });
-
-  function handleSubmit(event) {}
+  const { id } = useParams();
+  const navigate = useNavigate();
+  // right at the top - we need to GET the RECORD that matches the ID
+  // gets our current data on the show from the DB
+  useEffect(() => {
+    getOneShow(id)
+    // get value from DNB
+      .then((showData) => {
+        setShow(showData)
+      })
+      .catch((err) => console.error(err))
+  },[id])
+  // this is the U in C R U D
+  function handleSubmit(event) {
+    event.preventDefault();
+    updateShow(id, show)
+      .then((res) => {
+        navigate(`/shows/${id}`)
+      })
+      .catch((err) => {
+        console.error(err)
+      })
+  }
 
   function handleTextChange(event) {
     setShow({

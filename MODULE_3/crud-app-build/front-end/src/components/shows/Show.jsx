@@ -1,20 +1,25 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 import "./Show.css";
 
 import ErrorMessage from "../errors/ErrorMessage";
-import { getOneShow } from "../../api/fetch";
+import { getOneShow, destroyShow } from "../../api/fetch";
 
-function Show() {
+function Show() { 
+  // state to hold Show initialized to an empty object - data of a show
   const [show, setShow] = useState({});
+  //state to hold error state - intialized to a false
   const [loadingError, setLoadingError] = useState(false);
-
+  // example route: http://localhost:5173/shows/SLHUwyN
   const { id } = useParams();
+  const navigate = useNavigate();
+  // in this case id = "SLHUwyN"
 
   useEffect(() => {
     getOneShow(id)
-      .then((showData) =>{
+      .then((showData) => {
+        // updates our state variable with data
         setShow(showData);
         // because state in an obj we need to check Object.keys()
         if (Object.keys(showData).length === 0) {
@@ -28,7 +33,17 @@ function Show() {
         setLoadingError(true)
       })
   },[id])
-  function handleDelete() {}
+
+  function handleDelete(id) {
+    destroyShow(id)
+      .then(() => {
+        alert("show destroyed - retrouting to index");
+        navigate("/shows")
+      })
+      .catch((err) => {
+        console.error(err)
+      })
+  }
 
   return (
     <section className="shows-show-wrapper">
