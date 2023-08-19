@@ -10,8 +10,9 @@ const MagicCard = (props) => {
   const imageWidth = props.imageWidth || "150px";
 
   const handleClick = (e) => {
-    const cardName = e.target.id;
+    const cardName = e.target.id; // Berserk
     // this is our ENTIRE CARD OBJECT from our cards array
+    // find returns the FIRST item in the array that passes the callbacks function truthfully
     const selectedCard = props.displayedCards.find((card) => {
       return card.name === cardName;
     });
@@ -22,13 +23,13 @@ const MagicCard = (props) => {
   };
 
   return (
-    <Card style={{ width: "250px" }}>
+    <Card style={{ width: "350px" }}>
       <Card.Img variant="top" src={ imageUrl }/>
-      <Card.Title>{name}</Card.Title>
-      <Card.Subtitle>{originalType}</Card.Subtitle>
-      <Card.Text>{originalText}</Card.Text>
+      <Card.Title>{ name }</Card.Title>
+      <Card.Subtitle>{ originalType }</Card.Subtitle>
+      <Card.Text>{ originalText }</Card.Text>
       <Card.Body>
-        <Button variant="primary" id={name} onClick={handleClick}>
+        <Button variant="primary" id={ name } onClick={ handleClick }>
           Select Card
         </Button>
       </Card.Body>

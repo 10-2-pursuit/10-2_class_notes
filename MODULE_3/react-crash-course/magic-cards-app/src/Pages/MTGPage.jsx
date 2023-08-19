@@ -4,16 +4,25 @@ import CardList from "../components/CardList";
 import MainDisplay from "../components/MainDisplay";
 import useGetMTG from "../hooks/getMtgCards";
 import Controlls from "../components/Controlls";
-import Navbar from "../components/Navbar";
+
 const MTGPage = () => {
   // set an empty array for our state
   // two items in array,
   // the STATE itself, and a funciton to update it
+
+  // const allCards = useGetMtg().allCards
+  // const displayedCards = useGetMtg().displayedCards
+
   const { allCards, displayedCards, getNewCards, setDisplayedCards } = useGetMTG();
   // this is how we establish state
   // we return TWO items from the call
   // the first item is the statefullVariable, the second is the function to update
-  const [selectedCard, setSelectedCard] = useState(null);
+
+  // const stateStuff = useState(null);
+  // const selectedCard = sateStuff[0];
+  // const setSelectedCard = sateStuff[1];
+
+  const [ selectedCard, setSelectedCard ] = useState(null);
 
   const filterDisplayedCards = (cardType) => {
     // filter the cards based on whether or not they match the type
@@ -40,8 +49,8 @@ const MTGPage = () => {
         {/* this is passing PROPS */}
         <MainDisplay selectedCard={selectedCard} />
         <CardList
-          displayedCards={displayedCards}
-          setSelectedCard={setSelectedCard}
+          displayedCards = { displayedCards }
+          setSelectedCard = { setSelectedCard }
         />
       </div>
     </div>
