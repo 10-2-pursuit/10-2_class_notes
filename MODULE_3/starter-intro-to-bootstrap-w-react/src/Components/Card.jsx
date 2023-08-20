@@ -9,11 +9,13 @@ export default function Card({ details, image }) {
         <!-- ************************** --> */
 
   return (
-    <div className="" style={{ width: "18rem" }}>
+    //  rem is a unit of a measurement we can use in CSS
+    //  => it is connected to the width of the M in your font
+    <div className="col" style={{ width: "18rem" }}>
       <img src={image} className="card-img-top" alt={`${details.name} Rose`} />
-      <div className="">
-        <h5 className="">{details.name}</h5>
-        <p className="">
+      <div className="card-body text-center">
+        <h5 className="card-title">{details.name}</h5>
+        <p className="card-text">
           <span>
             Photo by &nbsp;
             <a href={details.unsplashPage}>{details.artistName} </a>
@@ -22,7 +24,7 @@ export default function Card({ details, image }) {
           </span>
         </p>
         <br />
-        <a className="">Gift it</a>
+        <a className="btn btn-outline-primary">Gift it</a>
       </div>
     </div>
   );

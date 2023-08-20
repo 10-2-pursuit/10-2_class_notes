@@ -6,8 +6,9 @@ export default function Table() {
   // <!-- ************************** -->
   return (
     <>
-      <h3 className="">Best Sellers</h3>
-      <table className="">
+
+      <h3 className="display-5">Best Sellers</h3> 
+      <table className="table table-striped table-hover text-center">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -30,7 +31,9 @@ export default function Table() {
             <td>$80</td>
           </tr>
           <tr>
+            {/* this TH tag is a number header on the rows */}
             <th scope="row">3</th>
+            {/*  this TD tag is the TABLE DATA */}
             <td>Orange</td>
             <td>3-9</td>
             <td>$10</td>
@@ -49,6 +52,7 @@ export default function Table() {
           </tr>
         </tbody>
       </table>
+    
     </>
   );
 }
