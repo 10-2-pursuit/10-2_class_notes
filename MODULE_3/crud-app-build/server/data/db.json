@@ -1,33 +1,9 @@
 {
   "shows": [
     {
-      "id": "SLHUwyN",
-      "type": "TV Show",
-      "title": "Scream Queens",
-      "country": "United States",
-      "dateAdded": "",
-      "releaseYear": 2015,
-      "rating": "TV-14",
-      "duration": "2 Seasons",
-      "listedIn": "Comedy, Horror, Mystery",
-      "description": "SCREAM QUEENS is a new genre-bending comedy-horror anthology series. The series, produced by 20th Century Fox Television, is from Ryan Murphy, Brad Falchuk, Ian Brennan and Dante Di Loreto, the executive producers of GLEE and “American Horror Story.” The first installment in the new anthology series revolves around a college campus which is rocked by a series of murders."
-    },
-    {
-      "id": "nzhZVSK",
-      "type": "TV Show",
-      "title": "Star Trek: Deep Space Nine",
-      "country": "United States",
-      "dateAdded": "",
-      "releaseYear": 1995,
-      "rating": "TV-PG",
-      "duration": "7 Seasons",
-      "listedIn": "Action, Adventure, Science Fiction",
-      "description": "Star Trek: Deep Space Nine takes place in the mid 24th century and chronicles the adventures of a team of Starfleet officers who take command of a remote alien space station on the edge of a new frontier."
-    },
-    {
       "id": "T5QqSps",
       "type": "TV Show",
-      "title": "Star Trek: Enterprise",
+      "title": "Star Trek: Enterprise!",
       "country": "United States",
       "dateAdded": "",
       "releaseYear": 2001,
@@ -39,9 +15,9 @@
     {
       "id": "zFY2Q8y",
       "type": "TV Show",
-      "title": "Star Trek: The Next Generation",
+      "title": "Star Trek: The Next Generation!@#@#!@##!#!@#!@#!@#",
       "country": "United States",
-      "dateAdded": "",
+      "dateAdded": "yesterday",
       "releaseYear": 1989,
       "rating": "TV-PG",
       "duration": "7 Seasons",
@@ -95,18 +71,6 @@
       "duration": "5 Seasons",
       "listedIn": "Classics, Science Fiction, Thriller",
       "description": "Rod Serling's seminal anthology series focused on ordinary folks who suddenly found themselves in extraordinary, usually supernatural, situations."
-    },
-    {
-      "id": "I7S_MwL",
-      "type": "TV Show",
-      "title": "Tokyo Magnitude 8.0",
-      "country": "Japan",
-      "dateAdded": "",
-      "releaseYear": 2009,
-      "rating": "TV-14",
-      "duration": "1 Season",
-      "listedIn": "Anime, Drama, International",
-      "description": "The devastation is unleashed in the span of seconds. An ancient rift in the Earth gives way and a force equivalent to over a thousand atomic bombs erupts beneath the feet of the citizens of the world’s largest mega-cities! In the mangled streets, three survivors must brave impossible obstacles and endure unspeakable hardships, with no way of knowing if their loved ones are still alive. In the aftermath of nature’s fury, only the strongest of will and most courageous of heart can hope to survive in TOKYO MAGNITUDE 8.0!"
     },
     {
       "id": "IgyC9Zv",
@@ -1187,45 +1151,33 @@
       "duration": "4 Seasons",
       "listedIn": "Crime, Drama, International",
       "description": "Modern Whitechapel is experiencing déjà vu with a series of murders that exactly copy those of perpetrated by Jack the Ripper. Can Detective Chandler, a rookie when it comes to murder cases, bring safety back to the streets of Whitechapel?"
+    },
+    {
+      "type": "educational",
+      "title": "Joseph and the amazing arrays",
+      "country": "",
+      "dateAdded": "8/15/2024",
+      "description": "pretty good in the second half",
+      "duration": "1000 hours",
+      "listedIn": "JS fundaemtals ",
+      "rating": "1000stars",
+      "releaseYear": "",
+      "id": "pkdt0io"
+    },
+    {
+      "type": "too much js",
+      "title": "Tim show",
+      "country": "",
+      "dateAdded": "",
+      "description": "boring ",
+      "duration": "",
+      "listedIn": "",
+      "rating": "",
+      "releaseYear": "",
+      "id": "6Lv06y1"
     }
   ],
   "movies": [
-    {
-      "id": "YqYJsEh",
-      "type": "Movie",
-      "title": "Ricky Velez: Here's Everything",
-      "country": "",
-      "dateAdded": "October 24, 2021",
-      "releaseYear": 2021,
-      "rating": "TV-MA",
-      "duration": "",
-      "listedIn": "Comedy, Stand Up",
-      "description": "​Comedian Ricky Velez bares it all with his honest lens and down to earth perspective in his first-ever HBO stand-up special."
-    },
-    {
-      "id": "iY9zZuf",
-      "type": "Movie",
-      "title": "Silent Night",
-      "country": "",
-      "dateAdded": "October 23, 2021",
-      "releaseYear": 2020,
-      "rating": "",
-      "duration": "94 min",
-      "listedIn": "Crime, Drama, Thriller",
-      "description": "Mark, a low end South London hitman recently released from prison, tries to go straight for his daughter, but gets drawn back in by Alan, his former cellmate, to do one final job."
-    },
-    {
-      "id": "gKpdYyu",
-      "type": "Movie",
-      "title": "The Marksman",
-      "country": "",
-      "dateAdded": "October 23, 2021",
-      "releaseYear": 2021,
-      "rating": "PG-13",
-      "duration": "108 min",
-      "listedIn": "Action, Thriller",
-      "description": "A hardened Arizona rancher tries to protect an 11-year-old migrant boy fleeing from a ruthless drug cartel."
-    },
     {
       "id": "ujryaBY",
       "type": "Movie",
@@ -1249,18 +1201,6 @@
       "duration": "104 min",
       "listedIn": "Science Fiction, Thriller",
       "description": "Mankind's earliest settlers on the Martian frontier do what they must to survive the cosmic elements and each other in this science-fiction thrill ride."
-    },
-    {
-      "id": "rcTk_pi",
-      "type": "Movie",
-      "title": "The Evil Next Door",
-      "country": "",
-      "dateAdded": "October 21, 2021",
-      "releaseYear": 2020,
-      "rating": "",
-      "duration": "88 min",
-      "listedIn": "Horror, Thriller",
-      "description": "New to her role as a stepmom, a young woman moves into a duplex with her partner and his five-year-old son Lucas. Soon, strange noises start coming from the empty house adjoining theirs. Also, who is Lucas’s new friend?"
     },
     {
       "id": "YlezMc9",
@@ -1789,6 +1729,43 @@
       "duration": "110 min",
       "listedIn": "Action, Adventure",
       "description": "On a mission in Jamaica, ultra-suave Agent 007 finds mad scientist Dr. No concocting a plot to derail the U.S. space program and take over the world."
+    },
+    {
+      "type": "imt",
+      "title": "tim",
+      "country": "itm",
+      "dataAdded": "",
+      "description": "itm",
+      "duration": "itmim",
+      "listedIn": "imt",
+      "rating": "imt",
+      "releaseYear": "itm",
+      "dateAdded": "itmi",
+      "id": "vwiyxWc"
+    },
+    {
+      "type": "aaa",
+      "title": "aaa",
+      "country": "aaa",
+      "dateAdded": "aa",
+      "description": "aa",
+      "duration": "aa",
+      "listedIn": "aa",
+      "rating": "a",
+      "releaseYear": "aa",
+      "id": "jPsdKye"
+    },
+    {
+      "type": "",
+      "title": "sefsfsefsef",
+      "country": "",
+      "dateAdded": "",
+      "releaseYear": "",
+      "rating": "",
+      "duration": "",
+      "listedIn": "seffesesf",
+      "description": "sefsefsef",
+      "id": "rXzTkA5"
     }
   ]
 }

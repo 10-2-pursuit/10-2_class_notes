@@ -16,6 +16,7 @@ export function createShow(show) {
 // Delete
 export function destroyShow(id) {
   // options object
+
   const options = { method: "DELETE" }
   return fetch(`${URL}/shows/${id}`, options)
 }
