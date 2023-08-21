@@ -55,6 +55,21 @@
 - Is there any difference on your local machine between the `main` and `add-movies` branch at this point? Why or why not?
 
 - In your own words, summarize the journey of the last commit you just made. Use technical terms and make sure to distinguish between activities happening locally vs remotely.
+- 
+ ## Pull Request & Merge:
+A **pull request (PR)** is a mechanism used to propose and review changes in a Git repository. It allows contributors to submit changes for review and integration into a target branch. The process involves the following steps:
+
+1. **Forking the Repository:** Contributors fork the original repository, creating their own copy where they can make changes.
+
+2. **Creating a Branch:** Contributors create a new branch in their fork to work on specific changes. This keeps the main branch unaffected until the changes are ready.
+
+3. **Making Changes:** Contributors make and commit their changes to the new branch in their fork.
+
+4. **Creating a Pull Request:** After making and committing changes, contributors open a pull request to propose merging their changes into the main repository's branch.
+
+5. **Review and Discussion:** The proposed changes are reviewed by maintainers and collaborators. Feedback and discussions occur directly in the pull request.
+
+6. **Approval and Merge:** Once the changes are reviewed and approved, the pull request can be merged into the target branch using a merge button. This typically results in a fast-forward merge, where changes are applied seamlessly.
 
 ## Group Branchin Activity 
 
@@ -69,20 +84,6 @@ You will be split into groups of two or three. Choose one person to be the "proj
 Continue this process until every member of the team has had a chance to add a few favorite movies. Remember you will always need to `pull` before making your own branch.
 
 
-## Pull Request & Merge:
-A **pull request (PR)** is a mechanism used to propose and review changes in a Git repository. It allows contributors to submit changes for review and integration into a target branch. The process involves the following steps:
-
-1. **Forking the Repository:** Contributors fork the original repository, creating their own copy where they can make changes.
-
-2. **Creating a Branch:** Contributors create a new branch in their fork to work on specific changes. This keeps the main branch unaffected until the changes are ready.
-
-3. **Making Changes:** Contributors make and commit their changes to the new branch in their fork.
-
-4. **Creating a Pull Request:** After making and committing changes, contributors open a pull request to propose merging their changes into the main repository's branch.
-
-5. **Review and Discussion:** The proposed changes are reviewed by maintainers and collaborators. Feedback and discussions occur directly in the pull request.
-
-6. **Approval and Merge:** Once the changes are reviewed and approved, the pull request can be merged into the target branch using a merge button. This typically results in a fast-forward merge, where changes are applied seamlessly.
 
 ## Merge Conflict:
 
