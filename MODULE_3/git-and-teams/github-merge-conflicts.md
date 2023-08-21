@@ -5,8 +5,8 @@
 
 ## Agenda
 * 6:00 - 7:00 Flex Time 
-* 8:00 - 9:30 Github Merge conflicts
-* 9:30 - 9:45 Break
+* 7:00 - 8:30 Github Merge conflicts
+* 8:30 - 8:45 Break
 * 8:45 - 10:00 Lab Time 
 
 ## Git Branching
