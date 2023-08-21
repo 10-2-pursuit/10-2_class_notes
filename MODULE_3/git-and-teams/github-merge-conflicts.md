@@ -1,14 +1,13 @@
 # Github Branching and Merge Conlfitw 8/21
 
 ## Quote of The Day
-“Tell me and I forget, teach me and I may remember, involve me and I learn.”
-    – Benjamin Franklin
+“Culture eats strategy for breakfast” - Peter Drucker
 
 ## Agenda
-* 6:00 - 6:00 
-* 8:00 - 8:30 
-* 8:30 - 8:45 
-* 8:45 - 10:00 
+* 6:00 - 7:00 Flex Time 
+* 8:00 - 8:30 Github Merge conflicts
+* 8:30 - 8:45 Break
+* 8:45 - 10:00 Lab Time 
 
 ## Git Branching
 - Create a new directory from the command line and `cd` into it. What is the command to create a new `git` repository?
