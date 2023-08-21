@@ -1,4 +1,4 @@
-# Github Branching and Merge Conlfitw 8/21
+# Github Branching and Merge Conlficts 8/21
 
 ## Quote of The Day
 “Culture eats strategy for breakfast” - Peter Drucker
