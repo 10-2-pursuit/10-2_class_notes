@@ -68,7 +68,7 @@ You will be split into groups of two or three. Choose one person to be the "proj
 
 Continue this process until every member of the team has had a chance to add a few favorite movies. Remember you will always need to `pull` before making your own branch.
 
-## Git Merge Conflics
+
 ## Pull Request & Merge:
 A **pull request (PR)** is a mechanism used to propose and review changes in a Git repository. It allows contributors to submit changes for review and integration into a target branch. The process involves the following steps:
 
