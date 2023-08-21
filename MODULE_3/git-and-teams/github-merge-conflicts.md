@@ -70,14 +70,42 @@ You will be split into groups of two or three. Choose one person to be the "proj
 Continue this process until every member of the team has had a chance to add a few favorite movies. Remember you will always need to `pull` before making your own branch.
 
 ## Git Merge Conflics
+## Pull Request & Merge:
+A **pull request (PR)** is a mechanism used to propose and review changes in a Git repository. It allows contributors to submit changes for review and integration into a target branch. The process involves the following steps:
 
-- What does it mean to "merge" two branches together?
+1. **Forking the Repository:** Contributors fork the original repository, creating their own copy where they can make changes.
 
-- Why do merge conflicts occur?
+2. **Creating a Branch:** Contributors create a new branch in their fork to work on specific changes. This keeps the main branch unaffected until the changes are ready.
+
+3. **Making Changes:** Contributors make and commit their changes to the new branch in their fork.
+
+4. **Creating a Pull Request:** After making and committing changes, contributors open a pull request to propose merging their changes into the main repository's branch.
+
+5. **Review and Discussion:** The proposed changes are reviewed by maintainers and collaborators. Feedback and discussions occur directly in the pull request.
+
+6. **Approval and Merge:** Once the changes are reviewed and approved, the pull request can be merged into the target branch using a merge button. This typically results in a fast-forward merge, where changes are applied seamlessly.
+
+## Merge Conflict:
+
+A **merge conflict** arises when Git is unable to automatically combine changes from different branches. This occurs when two branches have made conflicting changes to the same file or lines of code. The process involves the following steps:
+
+1. **Branching and Changes:** Two or more branches are developed independently, with changes made to the same lines in a file.
+
+2. **Merge Attempt:** An attempt is made to merge one branch into another, typically by creating a pull request.
+
+3. **Conflict Detection:** Git detects that the same lines have been modified in both branches, resulting in a conflict.
+
+4. **Manual Conflict Resolution:** Developers need to manually review and edit the conflicting file(s) to choose which changes to keep and discard. Conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) indicate the conflicting sections.
+
+5. **Committing Resolution:** Once conflicts are resolved, developers commit the changes to the repository with a message describing the conflict resolution.
+
+6. **Completion of Merge:** After resolving the conflict, the merge process is completed, and the changes are integrated into the target branch.
+
+***Example***
 
 - Take a look at the following image which shows a merge conflict in VSCode. Then, answer the questions below.
 
-  ![Conflict highlighting in VSCode.](../assets/vscode-conflict.png)
+  ![Conflict highlighting in VSCode.](./assets/vscode-conflict.png)
 
   - Where do the `<<<`, `>>>`, and `===` symbols come from?
   - What do those symbols mean?
@@ -93,7 +121,8 @@ In small groups, complete the following:
 
 - Run the code below in their terminal _outside of_ an existing `git` repository.
   ```bash
-  take group-merge-conflicts
+  mkdir group-merge-conflicts
+  cd group-merge-conflicts
   git init
   echo ".DS_Store" > .gitignore
   git add .
@@ -223,6 +252,10 @@ In small groups, complete the following:
     <tr>
       <td>Incoming</td>
       <td>The state of the file in the branch that is being merged into the current branch. This includes the changes made in the remote or other branch.</td>
+    </tr>
+        <tr>
+      <td>Git Head</td>
+      <td>A pointer that represents the current snapshot or commit in the branch you're currently working on. It moves forward with each new commit.</td>
     </tr>
   </tbody>
 </table>
