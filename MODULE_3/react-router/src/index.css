@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;400;700&family=Montserrat:wght@100;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat',  'Helvetica Neue',
+    sans-serif;
+    color: darkgoldenrod;
+    background: rgb(250,250,250);
+    background: radial-gradient(circle, rgba(250,250,250,1) 24%, rgba(255,243,230,1) 98%);
+}
+
+h1, h2, h3 {
+  font-family: 'Arima Madurai', cursive;
+}
+
+main {
+  min-height: 80vh;
+  min-width: 60%;
+  text-align: center;
+}
+
+main img {
+  display: block;
+  margin: auto;
+
+}
+
+/* * {
+  border: 1px solid gold;
+} */
+
+header, footer {
+  padding: 1em;
+  background: rgba(255,243,230,1);
+}
+
+footer {
+  text-align: center;
+}
+
+nav {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+li {
+  align-items: center;
+  padding: .5em;
+}
+
+nav > div {
+  position: fixed;
+  top: 40vh;
+  left: 5vw;
+  background: blanchedalmond;
+  padding: 1em;
+}
+
+
+.products a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+a {
+  color: gold;
+  text-shadow: 2px 2px 4px rgb(237, 238, 210);
+  text-decoration: none;
+}
+a:hover {
+  opacity: .5;
+}

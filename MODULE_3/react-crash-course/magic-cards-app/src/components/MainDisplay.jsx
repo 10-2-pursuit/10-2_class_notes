@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "./Card";
+import MagicCard from "./MagicCard";
 // object oriented programming - everything is an object
 // { state: true, wheels: 4 }
 // class MainDisplay extends Component {
@@ -18,12 +18,12 @@ import Card from "./Card";
 
 const MainDisplay = (props) => {
   
-  const selected = props.selectedCard;
+  const selectedCard = props.selectedCard;
 
-  return selected ? (
+  return selectedCard ? (
     <div className="main-display-container">
-        <h1>{ selected.name }</h1>
-      <Card card ={ selected } imageWidth = '350px'/>
+        <h1>{ selectedCard.name }</h1>
+      <MagicCard card ={ selectedCard } imageWidth = '550px'/>
     </div>
   ) : (
     <div>

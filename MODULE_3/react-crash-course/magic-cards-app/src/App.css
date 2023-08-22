@@ -3,6 +3,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  max-height:90vh;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+
 }
 
 .logo {
@@ -39,4 +44,8 @@
 
 .read-the-docs {
   color: #888;
+}
+
+li {
+  list-style-type:none;
 }

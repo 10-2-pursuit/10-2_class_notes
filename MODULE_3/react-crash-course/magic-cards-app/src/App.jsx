@@ -1,27 +1,27 @@
 import "./App.css";
-import { useState } from "react";
-import CardList from "./components/CardList";
-import MainDisplay from "./components/MainDisplay";
-import useGetMTG from "./hooks/getMtgCards";
+// import all comoponents
+import Home from "./pages/Home";
+import James from "./components/James";
+import Navbar from "./components/Navbar";
+import DnDpage from "./pages/DnDpage";
+import MTGPage from "./pages/MTGPage";
+// import Router
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
-  // set an empty array for our state
-  // two items in array,
-  // the STATE itself, and a funciton to update it
-  const [allCards, setAllCards] = useGetMTG([]);
-  // this is how we establish state
-  // we return TWO items from the call
-  // the first item is the statefullVariable, the second is the function to update
-  const [selectedCard, setSelectedCard] = useState(null);
-
   return (
     <div>
-      <h1 className="title">Welcome To our MTG app</h1>
-      <div className="app-container">
-        {/* this is passing PROPS */}
-        <MainDisplay selectedCard={selectedCard} />
-        <CardList allCards={allCards} setSelectedCard={setSelectedCard} />
+      {/* but i know its a component */}
+      {/* is a bit of advanced React similar to a context */}
+      {/*  for know think of the router as AVAILABLE to anything it sandwiches */}
+      <Navbar />
+        {/* <Switch /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mtg" element={<MTGPage />} />
+          <Route path="/dnd" element={<DnDpage />} />
+          <Route path="/james" element={<James />} />
+        </Routes>
       </div>
-    </div>
   );
 }
 

@@ -1,9 +1,17 @@
-import Card from "./Card";
-
+import MagicCard from "./MagicCard";
+// props is short for properties
+// oop - object oriented 
 const CardList = (props) => {
-
-  console.log(props.allCards);
-  const setSelectedCard = props.setSelectedCard
+  const { setSelectedCard, displayedCards } = props;
+  // props is always an object
+  // props looks like this 
+  /*
+  props = { 
+      displayedCards: displayedCards,
+      setSelectedCards: setSelectedCards 
+    }
+  
+  */ 
   // JSX things to remember
   // we cannot use statements - only epxressions
   // expressions resolve to a value - statements do not
@@ -13,15 +21,17 @@ const CardList = (props) => {
   // above is a strange way of declaring two varaibles that are returned from one useState call
   return (
     <div className="card-list-container">
-      <h2>Cards</h2>
-      { props.allCards.map((card, index) => (
-        <Card 
-        allCards = { props.allCards }
-        card = { card }
-        key = { index }
-        setSelectedCard = { setSelectedCard }
+      <h2>Displaying {displayedCards.length} Cards</h2>
+      {/* card ===  obj in state var displayedCards; index === the index of the arr displayedCards*/}
+      { displayedCards.map( (card, index) => (
+        < MagicCard
+          displayedCards={ displayedCards }
+          card={ card } 
+          key={ index }
+          setSelectedCard={ setSelectedCard }
         />
-      ) )}
+      )
+      )}
     </div>
   );
 };
