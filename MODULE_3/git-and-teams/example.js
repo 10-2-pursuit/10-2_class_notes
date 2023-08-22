@@ -1,4 +1,4 @@
-function simulateMergeConflict(alpha, omega) {
+function simulateMergeConflict(one, two) {
     
     const originalText = `This is the original text.`;
     const incomingChanges = `Incoming changes from another branch.`;
