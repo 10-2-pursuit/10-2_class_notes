@@ -1,0 +1,41 @@
+.shows-index-wrapper {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.shows-index-wrapper label {
+  display: block;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.shows-index {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px 0;
+}
+
+button a {
+  color: var(--primary);
+  border-bottom: 2px solid var(--light);
+  font-weight: 500;
+  padding: 1em;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .shows-index-wrapper {
+    width: 90%;
+  }
+  .shows-index {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .shows-index {
+    grid-template-columns: 1fr;
+  }
+}
