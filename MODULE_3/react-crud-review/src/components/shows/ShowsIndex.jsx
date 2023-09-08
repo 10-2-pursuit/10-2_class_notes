@@ -1,36 +1,22 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ErrorMessage from "../errors/ErrorMessage";
-import ShowListing from "../shows/ShowListing"
+import ShowListing from "../shows/ShowListing";
 import { getAllShows } from "../../api/fetch";
 import "./ShowsIndex.css";
 
 export default function ShowsIndex() {
-  // setting two states
-  // this check for an error
-  const [loadingError, setLoadingError] = useState(false)
-  // this sets up an array of shows
-  const [shows, setShows] = useState([]);
-  // when THIS COMPONENT MOUNTS this will fire
+  const [loadingError, setLoadingError] = useState('false');
+
   useEffect(() => {
-    // we need to get data 
     getAllShows()
-      .then((showsJson) => {
-        setShows(showsJson)
-        setLoadingError(false)
-      })
-      .catch((err)=> {
-        setLoadingError(true);
-        console.error(err)
-      })
-    // and save it to our shows  state
-    // dependency array tells us what to follow to fire our useEffect
-  },[])
+    setShows(showsJson); // Error 1: Missing .then() for the promise returned by getAllShows
+    setLoadingError(false);
+  }, []);
 
   return (
     <div>
-      {/* if loadingError is true - show error ELSE show rest of app */}
-      { loadingError ? (
+      {loadingError ? (
         <ErrorMessage />
       ) : (
         <section className="shows-index-wrapper">
@@ -43,14 +29,12 @@ export default function ShowsIndex() {
             Search Shows:
             <input
               type="text"
-              // value={searchTitle}
               id="searchTitle"
-              // onChange={handleTextChange}
             />
           </label>
           <section className="shows-index">
-            { shows.map((show) => {
-              return <ShowListing show = {show} key = {show.id}/>
+            {show.map((show) => { // Error 3: Incorrect prop name 'show' instead of 'shows'
+              return <ShowListing shows={show} key={show.id} />; // Error 4: Passing 'shows' prop instead of 'show'
             })}
           </section>
         </section>

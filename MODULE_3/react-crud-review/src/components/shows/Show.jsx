@@ -7,42 +7,36 @@ import ErrorMessage from "../errors/ErrorMessage";
 import { getOneShow, destroyShow } from "../../api/fetch";
 
 function Show() { 
-  // state to hold Show initialized to an empty object - data of a show
   const [show, setShow] = useState({});
-  //state to hold error state - intialized to a false
   const [loadingError, setLoadingError] = useState(false);
-  // example route: http://localhost:5173/shows/SLHUwyN
   const { id } = useParams();
   const navigate = useNavigate();
-  // in this case id = "SLHUwyN"
 
   useEffect(() => {
     getOneShow(id)
       .then((showData) => {
-        // updates our state variable with data
         setShow(showData);
-        // because state in an obj we need to check Object.keys()
         if (Object.keys(showData).length === 0) {
-          setLoadingError(true)
+          setLoadingError(true);
         } else {
-          setLoadingError(false)
+          setLoadingError(false);
         }
       })
       .catch((err) => {
-        console.error(err)
-        setLoadingError(true)
-      })
-  },[id])
+        console.error(err);
+        setLoadingError(true);
+      });
+  }, [id]);
 
   function handleDelete(id) {
     destroyShow(id)
       .then(() => {
         alert("show destroyed - retrouting to index");
-        navigate("/shows")
+        navigate("/shows");
       })
       .catch((err) => {
-        console.error(err)
-      })
+        console.error(err);
+      });
   }
 
   return (
@@ -74,7 +68,7 @@ function Show() {
               <p>{show.description}</p>
             </article>
             <aside>
-              <button className="delete" onClick={() => handleDelete(show.id)}>
+              <button className="delete" onClick={() => handleDelete(id)}> {/* Pass 'id' instead of 'show.id' */}
                 Remove show
               </button>
               <Link to={`/shows/${id}/edit`}>
@@ -89,3 +83,5 @@ function Show() {
 }
 
 export default Show;
+
+

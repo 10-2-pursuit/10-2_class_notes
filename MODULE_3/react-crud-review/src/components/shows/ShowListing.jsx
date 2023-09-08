@@ -1,13 +1,12 @@
-import {Link} from 'react-router-dom'
+import Link  from 'react-router-dom'
 import "./ShowListing.css";
-// this means showlisting is waiting for a show prop
+
 export default function ShowListing({ show }) {
   return (
     <article className="show">
       <h3 className="title">
-        {/* using the show prop here */}
-        {/* the <Link /> is for a USER to click on */}
-        <Link to={`/shows/${show.id}`}>{show.title}</Link>
+        {/* Introduce Error: Misplaced closing curly brace */}
+        <Link to={`/shows/show.id}`>{show.title}</Link>
       </h3>
       <p className="description">{show.description}</p>
       <aside className="details">
@@ -22,3 +21,9 @@ export default function ShowListing({ show }) {
     </article>
   );
 }
+
+/* Broken Code Summary:
+
+1. There is a misplaced closing curly brace in the `<Link>` element, which results in a syntax error.
+
+*/
