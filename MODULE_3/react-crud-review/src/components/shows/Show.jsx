@@ -1,31 +1,43 @@
 import { useState, useEffect } from "react";
+// why is this important? why do we need state.
+// things with STATE update in the browser 
+  // this is important because it makes things interactive
+    // checkbox etc
+    // the other REASON is that it makes REACT FASTER than vanilla DOM
+      // vanilla JS doesnt even have components;
+      // vanilla JS is slow. - it was never designed to update frequently
+      // vanillaJS is like a model T ford
+// use effect is the is for making side effects
+  // a side effect is something that happens that does not directly change a value
 import { Link, useParams, useNavigate } from "react-router-dom";
-
 import "./Show.css";
-
 import ErrorMessage from "../errors/ErrorMessage";
 import { getOneShow, destroyShow } from "../../api/fetch";
 
 function Show() { 
+  // we initialize a stateful variable - that way if a change is made it rerenders in the browser
   const [show, setShow] = useState({});
+  // { name:"whatever, otherThing: false, number:100000 }
+  // const show = useState({})[0]
+  // const setShow = useState({})[1]   -> note this is not 100% accurate but illustrates the syntax of array destructuring
   const [loadingError, setLoadingError] = useState(false);
   const { id } = useParams();
   const navigate = useNavigate();
-
-  useEffect(() => {
+// useEffect lets us do stuff;
+// how do we tell react what we want it to do?
+  // what does Array.map() do? 
+    // we do iterate over the array
+  // arr.map((x) => x+1)   <--- what do i need to give this map call?
+ 
+  useParams(() => {
     getOneShow(id)
-      .then((showData) => {
-        setShow(showData);
-        if (Object.keys(showData).length === 0) {
-          setLoadingError(true);
-        } else {
-          setLoadingError(false);
-        }
-      })
-      .catch((err) => {
-        console.error(err);
-        setLoadingError(true);
-      });
+    setShow(showData);
+    if (Object.keys(showData).length === 0) {
+      setLoadingError(true);
+    } else {
+      setLoadingError(false);
+    }
+  
   }, [id]);
 
   function handleDelete(id) {
@@ -49,13 +61,13 @@ function Show() {
           <>
             <aside>
               <p>
-                <span>Duration:</span> {show.duration}
+                <span>Duration:</span> { show.duration }
               </p>
               <p>
-                <span>Listed Categories:</span> {show.listedIn}
+                <span>Listed Categories:</span> { show.listedIn }
               </p>
               <p>
-                <span>Country:</span> {show.country}
+                <span>Country:</span> { show.country }
               </p>
               <p>
                 <span>Rating:</span> {show.rating}
@@ -68,7 +80,7 @@ function Show() {
               <p>{show.description}</p>
             </article>
             <aside>
-              <button className="delete" onClick={() => handleDelete(id)}> {/* Pass 'id' instead of 'show.id' */}
+              <button className="delete" onClick={() => handleDelete(id)}> 
                 Remove show
               </button>
               <Link to={`/shows/${id}/edit`}>
