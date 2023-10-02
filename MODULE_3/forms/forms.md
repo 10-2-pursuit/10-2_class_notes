@@ -14,7 +14,6 @@
 ## Today's Lab
 [React State Forms](https://github.com/10-2-pursuit/lab-react-forms/)
 
-Sure, here's an updated version of the table with a mention of state in the form:
 
 ### Quick Reference
 
@@ -55,7 +54,6 @@ Sure, here's an updated version of the table with a mention of state in the form
 </table>
 </div>
 
-Now, we have included "State Management" as a concept in the table, which highlights the usage of React state to hold and manage form data, especially in the context of controlled components. This addition emphasizes the importance of using state for form handling in React applications.
 
 ## Today's Pairs
 1. Emily Mohr, Tonesha Rose
