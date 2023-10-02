@@ -1,5 +1,11 @@
 # Introduction to the Internet and Servers
 
+## Agenda 
+* 7:00 - 7:30 KICKOFF!@#@!#!!@
+* 7:30 - 7:50 Postgress Install
+* 7:00 - 8:00 Break
+* 8:00 - 9:00 Internet && Servers
+* 9:00 - 10:00 Lab 
 ## Learning Objectives
 
 By the end of this lesson, you should be able to:
