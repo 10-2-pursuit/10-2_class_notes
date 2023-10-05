@@ -32,7 +32,7 @@ By the end of this lesson, you should be able to:
 
     
 
-## Today's Lab: [Introduction To Express Response](https://github.com/10-2-pursuit/lab-intro-to-express-response)
+## Today's Lab: [Introduction To Express Response](https://github.com/10-2-pursuit/lab-intro-to-express-request)
 
 ## Today's Pairs
 
