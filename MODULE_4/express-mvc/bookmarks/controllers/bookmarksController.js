@@ -47,7 +47,28 @@ bookmarks.post("/", (req, res) => {
     res.status(200).json( {status: "OK", payload: bookmarksData[bookmarksData.length - 1]} )
 })
 
-bookmarks.delete("/", (req, res) => {})
+// DELETE ROUTE - "localhost:8080/bookmarks/:id"
+
+bookmarks.delete("/:arrayIndex", (req, res) => {
+    const { arrayIndex } = req.params
+    if (bookmarksData[arrayIndex]){
+        const deletedBookmark = bookmarksData.splice(arrayIndex, 1)
+        res.status(200).json(deletedBookmark[0])
+    }else{
+        res.status(404).json({errror: "Could not locate bookmark to be deleted!"})
+    }  
+})
 // this IS a callback function
 // 
+
+// UPDATE ROUTE - "localhost:8080/bookmarks/:id"
+bookmarks.put("/:arrayIndex", (req, res) => {
+    const { arrayIndex } = req.params
+    if (bookmarksData[arrayIndex]){
+        bookmarksData[arrayIndex] = req.body
+        res.status(200).json((bookmarksData[arrayIndex]))
+    } else{
+        res.status(404).json({error: "Could not locate bookmark to be updated"})
+    }
+})
 module.exports = bookmarks;
