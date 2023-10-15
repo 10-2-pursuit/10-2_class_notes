@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
+const API = import.meta.env.VITE_BASE_URL;
+// if we need to edit something - we need the value it has curently;
+   // what kind of req do we need to make for that?
 
 function BookmarkEditForm() {
+  // why are we grabbing index? we  need top grab a SPECIFIC bookmark
   let { index } = useParams();
 
   const [bookmark, setBookmark] = useState({
@@ -11,7 +15,7 @@ function BookmarkEditForm() {
     description: "",
     isFavorite: false,
   });
-
+  const navigate = useNavigate(); 
   const handleTextChange = (event) => {
     setBookmark({ ...bookmark, [event.target.id]: event.target.value });
   };
@@ -19,11 +23,37 @@ function BookmarkEditForm() {
   const handleCheckboxChange = () => {
     setBookmark({ ...bookmark, isFavorite: !bookmark.isFavorite });
   };
+  // once page loads WE NEED THE BOOKMARK to set our state with 
+  useEffect(() => {
+    fetch(`${API}/bookmarks/${index}`)
+      .then(response => response.json())
+      .then(bookmark => {
+        console.log(bookmark)
+        setBookmark(bookmark)
+    })
+    .catch(() => navigate("/not-found"))
+  }, [index, navigate]);
 
-  useEffect(() => {}, []);
+  const updateBookmark = () => {
+    // our config for the fetch
+    const httpOptions = {
+      "method" : "PUT",
+      "body" : JSON.stringify(bookmark),
+      "headers" : {
+        "Content-type" : "application/json"
+      }
+    }
 
+      fetch(`${API}/bookmarks/${index}`, httpOptions)
+        .then(() => { 
+          alert(`${bookmark.name} has been updated!`);
+          navigate(`/bookmarks/${index}`)
+        })
+        .catch((err) => console.error(err))
+  }
   const handleSubmit = (event) => {
     event.preventDefault();
+    updateBookmark();
   };
   return (
     <div className="Edit">

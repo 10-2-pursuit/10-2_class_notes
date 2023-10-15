@@ -17,7 +17,22 @@ function BookmarkDetails() {
     .catch(() => navigate("/not-found"))
   }, [index, navigate]);
 
-  const handleDelete = () => {};
+  const handleDelete = () => {
+    const httpOptions = { "method" : "DELETE" };
+
+    // we know we need to delete a specific resource
+    fetch(`${API}/bookmarks/${index}`, httpOptions)
+      .then((res) => {
+        console.log(res)
+        alert("hey - bookmark was deleted!  Way to GO!");
+        navigate('/bookmarks');
+      })
+      .catch((err) => console.error(err))
+      // so we need to FETCH to our DB to make 
+        // we need a  DELETE request
+        // then once we've deleted we should reroute the user
+        // and pobably let them know we deleted something
+  };
   return (
     <article>
       <h3>
