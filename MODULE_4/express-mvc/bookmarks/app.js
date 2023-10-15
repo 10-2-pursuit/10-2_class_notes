@@ -5,7 +5,8 @@ const bookmarks = require("./controllers/bookmarksController");
 // app - is the name of MY CAR
 // this is an instance of the express server 
 const app = express();
-
+const cors = require("cors")
+app.use(cors())
 // middleware - use another file in the middle of a req
 // all it is - is a function that happens between req and res
 app.use(express.json());
