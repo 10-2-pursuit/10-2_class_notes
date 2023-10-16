@@ -6,9 +6,9 @@ The React Portfolio Project is designed to enhance your web development skills u
 
 ## Key Concepts and Tips
 
-- **Strategic Planning**: Plan your project's structure and component hierarchy before coding.
-- **Progressive Development**: Start with a basic version and gradually add features as you progress.
-- **Commit Regularly**: Frequent commits help you track changes and manage your work efficiently.
+- **Strategic Planning**: Plan your project's structure and component hierarchy before coding.  Wireframes, RESTful routes.
+- **Progressive Development**: Start with a basic version and gradually add features as you progress.  
+- **Commit Regularly**: Frequent commits help you track changes and manage your work efficiently. Push code often.
 - **Test Everything Constantly**: Write some code, log the result.  In order to develop the app you must be testing each piece of code as you go.
 - **Seek Help**: This project is meant to be challenging.  Completion fo 70% is considered a passing grade.  If you are stuck and need assistance you  _must_ reach out for help to you instructors or va the #help_code slack channel
 
