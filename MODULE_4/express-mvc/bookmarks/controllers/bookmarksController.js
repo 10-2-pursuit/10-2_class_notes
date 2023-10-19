@@ -29,7 +29,7 @@ bookmarks.get("/", (req, res) => {
 // ONE specific item from our Data?
 // the ':' signals express that this is meant to be dynamic
 // and anything after the ":" is a variable OF that name
-bookmarks.get("/:index", (req, res) => {
+bookmarks.get("/:index",  (req, res) => {
     const { index } = req.params;
     console.log("SHOW ROUTE!@#$@!##@##!@#@!")
     if (bookmarksData[index]) {

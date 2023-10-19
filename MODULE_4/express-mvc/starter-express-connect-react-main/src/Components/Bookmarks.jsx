@@ -5,6 +5,7 @@ const API = import.meta.env.VITE_BASE_URL
 
 function Bookmarks() {
   const [bookmarks, setBookmarks] = useState([]);
+  
   useEffect(()=> {
     fetch(`${API}/bookmarks`)
     .then((response) => response.json())
