@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "db_schema": "psql -U postgres -f db/schema.sql",
     "db_seed": "psql -U postgres -f db/seed.sql"
   },
