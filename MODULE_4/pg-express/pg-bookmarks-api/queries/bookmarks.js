@@ -28,12 +28,35 @@ const createBookmark = async (bookmark) =>{
     }
 }
 
-const deleteBookmark = () => {};
+const deleteBookmark = async (id) => {
+    try {
+        const deletedBookmark = await db.one(
+            "DELETE from bookmarks WHERE id = $1 RETURNING *",
+            id
+        )
+        return deletedBookmark
+    } catch(error) {
+        return error
+    }
+};
 
-const updateBookmark = () => {};
+const updateBookmark = async (id, bookmark) => {
+    try {
+        const { name, url, category, is_favorite } = bookmark;
+        const updatedBookmark = await db.one(
+            "UPDATE bookmarks SET name=$1, url=$2,category=$3, is_favorite=$4 WHERE id=$5 RETURNING *",
+            [name, url, category, is_favorite, id]
+        );
+        return updatedBookmark
+    } catch(err) {
+        return err
+    }
+};
 
 module.exports = {
     getAllBookmarks,
     getOneBookmark,
-    createBookmark
+    createBookmark,
+    deleteBookmark,
+    updateBookmark
 }
