@@ -8,10 +8,12 @@ const {
     updateBookmark
 } = require("../queries/bookmarks.js");
 // 
+const reviewsController = require("./reviewsController.js")
 const { checkName, checkBoolean } = require("../validations/checkBookmarks.js")
 const bookmarks = express.Router();
 
-
+// this controller will pass the bookmark_id param to the reviewsController
+bookmarks.use("/:bookmark_id/reviews", reviewsController)
 bookmarks.get("/", async (req, res) => {
     // heres where we need to get THE DATAS
     const allBookmarks = await getAllBookmarks();
@@ -23,7 +25,6 @@ bookmarks.get("/", async (req, res) => {
         .json({ success: false, data: { error: "Server Error - we didn't do it!" } });
     }
 });
-
 bookmarks.get("/:id", async (req, res) => {
     const { id } = req.params
     const oneBookmark = await getOneBookmark(id)
