@@ -19,7 +19,7 @@ const getOneBookmark = async (id) => {
         return error
     }
 };
-const createBookmark = async (bookmark) =>{
+const createBookmark = async (bookmark) => {
     try {
         const createdBookmark = await db.one("INSERT INTO bookmarks (name, url, category, is_favorite) VALUES ($1, $2, $3, $4) RETURNING *", [bookmark.name, bookmark.url, bookmark.category, bookmark.is_favorite])
         return createdBookmark
