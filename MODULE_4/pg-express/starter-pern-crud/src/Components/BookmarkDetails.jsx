@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
+import Reviews from "./Reviews";
 const API = import.meta.env.VITE_API_URL
 
 function BookmarkDetails() {
@@ -26,7 +27,6 @@ function BookmarkDetails() {
     .then(() => navigate(`/bookmarks`))
     .catch(error => console.log(error))
   }
-
   return (
     <article>
       <h3>{true ? <span>⭐️</span> : null}</h3>
@@ -51,6 +51,7 @@ function BookmarkDetails() {
         </div>
         <button onClick={handleDelete}>Delete</button>
       </div>
+      <Reviews />
     </article>
   );
 }
