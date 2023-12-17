@@ -17,12 +17,14 @@
         // - As a result of a mathematical operation on things that are not a number
     // We know we can use the + operator to add numbers and strings
     // What happens when we try to add a string to a number?
-    const twentyTwo = "two" + 2
-    console.log(twentyTwo)
+    // const twentyTwo = "two" + 2
+    // console.log(twentyTwo) // "two2"
+
     // How about when try to multiply a string by a number?
     const twentyTimes = "two" * 2
-    console.log(twentyTimes) 
+    // console.log(twentyTimes) // NaN
     // How do we check equality with NaN?
+        // console.log(NaN == NaN)
         // console.log(Number.isNaN(twentyTimes))
 
 
@@ -39,6 +41,14 @@
         // To rather show:
         // 4 duct tape: $20
 
+        // let ductTapePrice = 5;
+        // let amountOfDuctTape = 4;
+        // let total = ductTapePrice * amountOfDuctTape
+
+        // console.log(total)
+
+        // console.log(`${amountOfDuctTape} duct tape: $${total}`)
+
         
 // Apply Discount (divide, PEMDAS, percentage)
     
@@ -52,7 +62,8 @@
         
         // The new total is equal to the old total, minus the total times the percentage to subtract
     // Let's try to calculate the total. Is the following correct?
-    
+    // total = total - (total * 10) / 100
+    // console.log(total)
 
     // Should we add parenthesis be sure we get 18?
 
@@ -64,7 +75,7 @@
     
     // Now, let's add some logic, that if we have more than 3 rolls of duct tape, we should apply the discount:
     // let ductTapePrice = 5;
-    // let amountOfDuctTape = 2;
+    // let amountOfDuctTape = 4;
     // let total = ductTapePrice * amountOfDuctTape;
     // if (amountOfDuctTape >= 3){
     //     total = total - (total * 10) / 100 // 18?
@@ -89,9 +100,9 @@
 // Find the Difference in Price (abs, min/max)
     // Let's say we want to comparison shop  
     // We find prices for our duct tape as:   
-        const pricesPerRoll = [2, 3, 4, 6, 7, 8];
+        // const pricesPerRoll = [2, 3, 4, 6, 7, 8];
     // It should be really easy to spot the min and max price. But what if we had:
-        //   const pricesPerRoll = [4, 3, 2, 5, 3, 7, 4, 6, 3, 11, 4, 8, 3, 4, 5];
+          const pricesPerRoll = [4, 3, 2, 5, 3, 7, 4, 6, 3, 11, 4, 8, 3, 4, 5];
     // and these prices change daily.
 
     // We should write a function that will find the minimum price, find the maximum price and then console log the difference between the values
@@ -99,10 +110,13 @@
     // We have a method Math.min that can find the minimum of any number of arguments. However, our values are in an array. If we try to pass the array, we get NaN. We could write a loop to iterate over each value and write some logic. But we have another option the spread operator
         // let ourPrice = 5;
         // let competitorPrices = [2, 3, 4, 6, 7, 8];
+        // min - 2
+        // max - 8
+        // 6
         
         // const comparePriceRange = (prices) => {
-        // let min = Math.min(...competitorPrices); // we will change this for the actual min val
-        // let max = Math.max(...competitorPrices); // we will change this for the actual max val
+        // let min = Math.min(...prices); // we will change this for the actual min val
+        // let max = Math.max(...prices); // we will change this for the actual max val
         // let priceRange = max - min;
         // return priceRange;
         // };
@@ -112,6 +126,7 @@
         // const bestPrice = (competitorPrices, ourPrice) => {
         //     let competitorMin = Math.min(...competitorPrices);
         //     return competitorMin - ourPrice;
+        //     // 2 - 5 -> -3
         // };
         // console.log(bestPrice(competitorPrices, ourPrice));
 
@@ -157,7 +172,7 @@
     
     // let cartTotal = 26.41;
     // let roundedUpCart = Math.ceil(cartTotal);
-        // console.log(roundedUpCart);
+    //     console.log(roundedUpCart);
 
     // Great! We now have a total of $27 to charge our customers.
     
@@ -173,15 +188,17 @@
     // let cartTotal = 26.41;
     // let roundedUpCart = Math.ceil(cartTotal);
     // let donation = (roundedUpCart - cartTotal).toFixed(2);
-        // console.log(donation);
+    //     console.log(+donation);
 
 // Find the Median (math round/ceil/floor)
     // Now that we've reviewed some basics, let's go through how to solve the Find the Median problem.
 
     // Using the following numbers array, find the median:
-
-       
-
+        // const nums = [
+        //     14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12,
+        //     17, 12, 71, 18, 15, 12,
+        //   ];
+        const evenLengthNums = [5, 7, 4, 3, 1] // 4.5
     // 1. Do we understand all the words in stating the problem
         // - What is the median?
             // - Middle num in a set of nums sorted in order
@@ -237,7 +254,7 @@
             // shortArray[Math.floor(shortArray.length / 2)];
 
         // What if we have an even number of array items?
-            const shortArray2 = [1, 2, 4, 5];
+            // const shortArray2 = [1, 2, 4, 5];
         //We should take the middle two numbers and take the average.
 
             // const firstNum = shortArray2[Math.floor(shortArray2.length / 2)];
@@ -254,21 +271,21 @@
 
             // const firstNum = shortArray2[Math.floor(shortArray2.length / 2) - 1];
             // const secondNum = shortArray2[Math.ceil(shortArray2.length / 2)];
-            // const average = firstNum + secondNum / 2;
-            console.log(firstNum, secondNum, average);
+            // const average = (firstNum + secondNum) / 2;
+            // console.log(firstNum, secondNum, average);
             // We get 2 4 4 - is that the expected for the average? We were expecting 3. What went wrong?
 
         // We need to add parentheses in order to first add the numbers together and then divide
 
-            const firstNum = shortArray2[Math.floor(shortArray2.length / 2) - 1];
-            const secondNum = shortArray2[Math.ceil(shortArray2.length / 2)];
-            const average = (firstNum + secondNum) / 2;
+            // const firstNum = shortArray2[Math.floor(shortArray2.length / 2) - 1];
+            // const secondNum = shortArray2[Math.ceil(shortArray2.length / 2)];
+            // const average = (firstNum + secondNum) / 2;
             // console.log(firstNum, secondNum, average);
     
     
     // Part 3: Putting it All Together
-    const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12];
-    nums = [11, 11, 13, 17, 11]
+    // const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12];
+    let nums = [11, 11, 13, 17, 11, 12]
     const findTheMedian = (numArray) => {
         numArray.sort()
 
@@ -281,6 +298,8 @@
             return average
         }
     }
+
+    console.log(findTheMedian(nums))
 
 // Other Math References
 
