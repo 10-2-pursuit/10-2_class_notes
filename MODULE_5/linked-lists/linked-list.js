@@ -98,7 +98,12 @@ class LinkedList {
         return this.head;
     }
 
+    // *************************** GROUP ACTIVITY *******************************
 
+    // add a node at a THE START of the list
+    insert() {}
+    // delete a node based on a given value
+    delete(node) {}
 }
         
 
