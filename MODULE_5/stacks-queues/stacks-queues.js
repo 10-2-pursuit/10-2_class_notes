@@ -52,6 +52,7 @@ const months = [
   // the blueprint for our bits of data => bricks in a wall or steel in a skyscraper;
 
 // a node is our individual resource
+  // every single DATA STRUCUTRE we CREATE starts with a node
 class Node {
     constructor(data, next = null) {
         this.data = data;
@@ -72,40 +73,40 @@ class Node {
 // think of this almost like an Index page - organizes a lot of resources
 class Stack {
         // default value will always default to null - if no value is passed
-    constructor(taco = null) {
+    constructor(top = null) {
         // the whole reason we are doing this
             // is so we have a reference to the START of our STRUCTURE
-        this.taco = taco;
+        this.top = top;
     }
 
     isEmpty(){
-        return this.taco === null
+        return this.top === null
     }
 
     push(data) {
         // what is our stack made of?
         const newNode = new Node(data);
         // where does new information go?
-        newNode.next = this.taco;
-        this.taco = newNode; // reasign the taco 
+        newNode.next = this.top;
+        this.top = newNode; // reasign the top 
         // what happened to the old information?
     }
     peek() {
-        return this.taco;
+        return this.top;
     } 
     pop() {
-        if (this.taco === null) {
+        if (this.top === null) {
             return "stack is empty"
         }
-        let currentTop = this.taco;
-        this.taco = currentTop.next;
+        let currentTop = this.top;
+        this.top = currentTop.next;
 
         return currentTop
     }
     // create an array push items into it
     toArray() {
         let arr = [];
-        let currentItem = this.taco;
+        let currentItem = this.top;
         // almost recursive 
         while (currentItem) {
             arr.push(currentItem.data);
@@ -133,6 +134,101 @@ console.log(myStack.toArray())
 // console.log( inspect(myStack, { colors:true, depth: 12 }) )
  
 
+/* 
+
+    Q U E U E S - FIFO: First In First Out
+    
+    In the realm of data structures and algorithms, especially in the context of technical interviews, the queue plays a pivotal role in solving a variety of computational problems. Understanding queues is essential for aspiring developers, as they offer a systematic way of handling data in a first-in, first-out (FIFO) manner.
+
+    Queues operate much like a line at a grocery store. The first person in line is the first to be served, and new people join at the end of the line. This FIFO nature makes queues ideal for scenarios where order and timeliness are crucial.
+
+     A queue is how we iterate over a graph in a BFS
+        BFS search means moving through a graph ONE layer at a TIME
+
+*/
+
+
+/* 
+ ******* OUR QUEUE WILL NEED THE FOLLOWING METHODS ********
+    enqueue (adds an item)
+    dequeue (removes an item)
+    peek (returns the first item)
+    isEmpty (checks if the queue is empty)
+*/
+
+
+
+
+class Queue {
+    constructor() {
+        this.first = null;
+        this.last = null;
+        this.size = 0;
+    }
+
+    enqueue(data) {
+        // SHANICE => ANTHONY => NULL 
+        let newNode = new Node(data);
+        // ALEX 
+        if (!this.first) {
+            this.first = newNode;
+            this.last = newNode;
+        } else {
+            this.last.next = newNode;
+            this.last = newNode;
+        }
+
+        return this.size++;
+    }
+    // remove the first item 
+    dequeue() {
+        // check if its empty
+        if (this.first === null) {
+            return "The Queue is empty!"
+        }
+        // store our current first value  - need to store TEMP
+        let currentFirst = this.first;
+        if (this.first === this.last) {
+            this.last = null;
+        }
+        // we are going to reassign the first value
+        // to the first.next
+        this.first = currentFirst.next;
+        this.size--;
+        return currentFirst
+
+        
+        // reduce this.size by 1
+
+        // return TEMP
+
+        
+
+    }
+    peek() {
+        return this.first;
+    }
+    isEmpty() {
+        return this.first === null
+    }
+}
+    
+
+let myQueue = new Queue();
+
+myQueue.enqueue("test!")
+console.log(myQueue.dequeue())
+for(let i = 0; i < months.length; i ++) {
+    myQueue.enqueue(months[i]);
+}
+// this is called an assertion - its aserts a condition and returns True or False; 
+// we need to start THINKING about testing ... trust us
+console.log(myQueue.peek().data === "Jan");
+console.log(myQueue.peek().data === "Taco");
+
+console.log(myQueue.dequeue())
+// console.log(inspect(myQueue, {colors:true, depth:12}))
+  
 
 
 
@@ -153,34 +249,6 @@ console.log(myStack.toArray())
 
 
 
-/* 
-
-    Q U E U E S - FIFO: First In First Out
-    
-    In the realm of data structures and algorithms, especially in the context of technical interviews, the queue plays a pivotal role in solving a variety of computational problems. Understanding queues is essential for aspiring developers, as they offer a systematic way of handling data in a first-in, first-out (FIFO) manner.
-
-    Queues operate much like a line at a grocery store. The first person in line is the first to be served, and new people join at the end of the line. This FIFO nature makes queues ideal for scenarios where order and timeliness are crucial.
-
-*/
-
-
-/* 
- ******* OUR QUEUE WILL NEED THE FOLLOWING METHODS ********
-    enqueue (adds an item)
-    dequeue (removes an item)
-    peek (returns the taco item)
-    isEmpty (checks if the queue is empty)
-*/
-
-
-
-
-class Queue {
-    constructor() {
-    }
-}
-    
-  
    
 
 
