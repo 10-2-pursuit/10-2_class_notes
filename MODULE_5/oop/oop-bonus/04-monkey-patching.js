@@ -3,6 +3,8 @@
 // #Instance methods
 // To add an instance method to a class, you can add it as a property on the prototype property of the class.
 
+// Every object in JavaScript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
+
 // Using the Book example, you can add a toString instance method on the Book class by adding it as a property on the prototype property of the Book class.
 
 Book.prototype.toString = function() {
