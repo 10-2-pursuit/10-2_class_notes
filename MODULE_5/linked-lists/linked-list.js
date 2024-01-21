@@ -101,10 +101,45 @@ class LinkedList {
     // *************************** GROUP ACTIVITY *******************************
 
     // add a node at a THE START of the list
-    insert() {}
+    insert(data) {
+        let newNode = new Node(data);
+
+        if (!this.head) {
+          this.head = newNode;
+        } else {
+          newNode.next = this.head;
+          this.head = newNode;
+        }
+      }
     // delete a node based on a given value
-    delete(node) {}
+   
+  delete(data) {
+    // start at the beginning
+    let node = this.head;
+    // initialzie a count 
+    let counter = 0;
+    // if our current data is NOT what we want to delete and there IS a next
+    while (node.data !== data && node.next) {
+    // keep track of how many STEPS WE'VE TAKEN
+      counter++;
+    // iterate forward
+      node = node.next;
+    }
+    // if we get here we've found what we need
+    let foundNode = node;
+    // start over from the head
+    node = this.head;
+    // only go as far as counter
+    for (let i = 1; i < counter; i++) {
+        // go RIGHT BEFORE foundNode
+      node = node.next;
+    }
+    // skip the node to delete
+    node.next = foundNode.next;
+  }
+
 }
+
         
 
 const linkedList = new LinkedList(firstNode);
@@ -144,4 +179,42 @@ const months = [
     previousNode = currentNode;
   }
 
-  console.log(list.getLast())
+  console.log(list.delete("March"))
+  console.log(list.head.next.next)
+  console.log(list.size())
+
+
+
+/* 
+  OBJECT PROTOTYPE LINKED LIST - THE OLD SCHOOL WAY
+  In the wild you may encounter something like this:
+
+    LinkedList.prototype.someMethod (){
+
+    }
+
+    This is an example of the old Object prototype way to define classes in JS.
+    Node and LinkedList are defined as functions. Methods like clear() and search() are attached to LinkedList.prototype, which means they are available to all instances of LinkedList. 
+    
+    This approach is less syntactically clean compared to the class-based approach but was the standard way of creating complex objects and their prototypes in JavaScript before ES6.
+
+    This way of writing serves the same purpose as our Class based approach
+
+    function Node(data) {
+        this.data = data;
+        this.next = null;
+    }
+    
+
+// Constructor for LinkedList
+function LinkedList() {
+    this.head = null;
+}
+
+// Adding a method to the LinkedList prototype
+LinkedList.prototype.clear = function() {
+    this.head = null;
+};
+
+
+*/
