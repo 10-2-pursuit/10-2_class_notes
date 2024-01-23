@@ -6,43 +6,43 @@
 
   // There will be times when you will have to know which object a method belongs to. The keyword `this` exists in every function and it evaluates to the object that is currently invoking that function. So the value of this relies entirely on where a function is invoked.
 
-  class Dog {
-    constructor(name, isSitting) {
-      this.name = name;
-      this.isSitting = isSitting;
-    }
+  // class Dog {
+  //   constructor(name, isSitting) {
+  //     this.name = name;
+  //     this.isSitting = isSitting;
+  //   }
   
-    stand() {
-      this.isSitting = false;
-      return this.isSitting;
-    }
-  }
+  //   stand() {
+  //     this.isSitting = false;
+  //     return this.isSitting;
+  //   }
+  // }
   
-  let dog = new Dog("Bowser", true);
+  // let dog = new Dog("Bowser", true);
   
   // Bowser starts out sitting
-  console.log(dog.isSitting); // prints `true`
+  // console.log(dog.isSitting); // prints `true`
   
   // Let's make him stand
-  console.log(dog.stand()); // prints `false`
+  // console.log(dog.stand()); // prints `false`
   
   // He's actually standing now!
-  console.log(dog.isSitting); // prints `false`
+  // console.log(dog.isSitting); // prints `false`
 
   // Inside of a method, you can use the keyword this to refer to the object that is calling that method. So when calling dog.stand() and you invoke the code of the stand method, this will refer to the dog object.
 
-  class Cat {
-    purr() {
-      console.log("meow");
-    }
+  // class Cat {
+  //   purr() {
+  //     console.log("meow");
+  //   }
   
-    purrMore() {
-      this.purr();
-    }
-  }
-  let cat = new Cat();
+  //   purrMore() {
+  //     this.purr();
+  //   }
+  // }
+  // let cat = new Cat();
   
-  cat.purrMore();
+  // cat.purrMore();
 
   // Through the this variable, the purrMore method can access the object it was called on. In purrMore, you use this to access the cat object that has a purr method. In other words, inside of the purrMore function if you had tried to use purr() instead of this.purr() it would not work.
 
@@ -64,7 +64,7 @@ function testMe() {
   console.log(this);
 }
 
-testMe(); // Object [global] {global: [Circular], etc.}
+// testMe(); // Object [global] {global: [Circular], etc.}
 
 // When you run the above testMe function in Node you'll see that this is set to the global object. To reiterate: each function you invoke will have both a context and a scope. So even functions in Node that are not defined on an object have the global object as their this and therefore their context.
 
@@ -88,20 +88,20 @@ testMe(); // Object [global] {global: [Circular], etc.}
 
 // Let's take a look at what happens when you try to isolate and invoke just the changeName function:
 
-// class Dog {
-//   constructor(name) {
-//     this.name = name;
-//   }
+class Dog {
+  constructor(name) {
+    this.name = name;
+  }
 
-//   changeName() {
-//     this.name = "Layla";
-//   }
-// }
+  changeName() {
+    this.name = "Layla";
+  }
+}
 
-// let dog = new Dog("Bowser");
+let dog = new Dog("Bowser");
 
 // Note this is **not invoked** - you are assigning the function itself
-// let change = dog.changeName;
+let change = dog.changeName;
 // console.log(change()); // TypeError, due to not recognizing a valid context
 
 // Your dog still has the same name!
@@ -121,18 +121,18 @@ let hello = function () {
 // global.setTimeout(hello, 5000); // waits 5 seconds then prints "hello!"
 // Let's say you wanted your cat to "meow" in 5 seconds instead of right now:
 
-// class Cat {
-//   purr() {
-//     console.log("meow");
-//   }
+class Cat {
+  purr() {
+    console.log("meow");
+  }
 
-//   purrMore() {
-//     this.purr();
-//   }
-// }
-// let cat = new Cat();
+  purrMore() {
+    this.purr();
+  }
+}
+let cat = new Cat();
 
-// global.setTimeout(cat.purrMore, 5000);  
+global.setTimeout(cat.purrMore, 5000);  
 // 5 sec later: TypeError: this.purr is not a function
 
 // So what happened there? You called cat.purrMore so it should have the right context right? Noooooope. This is because cat.purrMore is a callback in the above code! Meaning that when the global.setTimeout function attempts to call the purrMore function all it has reference to is the function itself. Since setTimeout is on the global object that means that the global object will be the context for attempting to invoke the cat.purrMore function.

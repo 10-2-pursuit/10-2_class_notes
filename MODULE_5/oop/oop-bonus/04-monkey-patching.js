@@ -7,6 +7,14 @@
 
 // Using the Book example, you can add a toString instance method on the Book class by adding it as a property on the prototype property of the Book class.
 
+class Book {
+    constructor(title, series, author){
+        this.title = title
+        this.series = series
+        this.author = author
+    }
+}
+
 Book.prototype.toString = function() {
     return `${this.title} by ${this.author}`;
   };
@@ -16,7 +24,7 @@ Book.prototype.toString = function() {
     'Harry Potter',
     'J.K. Rowling'
   );
-  console.log(gobletOfFire.toString()); // The Goblet of Fire by J.K. Rowling
+//   console.log(gobletOfFire.toString()); // The Goblet of Fire by J.K. Rowling
 
   // Note: instance methods can be added this way to classes that are declared using both ES5 and ES6 syntax. But, like static methods, you cannot set arrow functions as values on the prototype object of a class. Try it out for yourself to see why!
 
@@ -32,8 +40,15 @@ String.prototype.helloWorld = function() {
   console.log("Hello World!");
 }
 
-// const str = "";
-// str.helloWorld(); // => prints "Hello World!"
+const str = "";
+str.helloWorld(); // => prints "Hello World!"
 
 // This technique is mostly used when you want to add custom methods on existing built-in JavaScript classes like Array, String, and Object.
 
+String.prototype.reverse = function() {
+    let reversedString = this.split("").reverse().join("")
+    return reversedString
+}
+
+let myString = "Gigi is super cool"
+console.log(myString.reverse())
