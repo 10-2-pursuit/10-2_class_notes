@@ -67,7 +67,7 @@ function quickSortWithCallback(array, callback) {
     let leftSorted = quickSortWithCallback(left, callback); 
     let rightSorted = quickSortWithCallback(right, callback);
 
-    return [...leftSorted, pivot, ...rightSorted]; //[Anthony, durdona, gigi,jeffrey, mashu, obi, tim,]
+    return [...leftSorted, pivot, ...rightSorted]; //[Anthony, Dwayne, Gigi, Keith, Mashu, Shanice, Tim,]
 }
 
 console.log(quickSortWithCallback(people, myCallback));
