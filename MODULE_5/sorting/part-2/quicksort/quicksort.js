@@ -39,12 +39,12 @@ function quickSort(array) {
 
 let people = [
     { name: "Gigi", title: "Instructor" },
-    { name: "AnJu", title: "Student" },
-    { name: "Durdona", title: "Student" },
+    { name: "Dwayne", title: "Student" },
+    { name: "Shanice", title: "Student" },
     { name: "Tim", title: "Instructor" },
-    { name: "Obi", title: "Student" },
+    { name: "Anthony", title: "Student" },
     { name: "Mashu", title: "Engineer" },
-    { name: "Jeffrey", title: "Student" },
+    { name: "Keith", title: "Student" },
   ];  
 
 let myCallback = (a, b) => a.name > b.name ? -1 : 1;
@@ -67,7 +67,7 @@ function quickSortWithCallback(array, callback) {
     let leftSorted = quickSortWithCallback(left, callback); 
     let rightSorted = quickSortWithCallback(right, callback);
 
-    return [...leftSorted, pivot, ...rightSorted]; //[AnJu, durdona, gigi,jeffrey, mashu, obi, tim,]
+    return [...leftSorted, pivot, ...rightSorted]; //[Anthony, durdona, gigi,jeffrey, mashu, obi, tim,]
 }
 
 console.log(quickSortWithCallback(people, myCallback));

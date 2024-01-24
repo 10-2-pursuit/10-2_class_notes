@@ -67,7 +67,7 @@ const rightTest = [3, 6];
 
 // [1, 3, 4, 6, 8]
 
-const merge = (left, right) => {
+const merge = (left, right) => { // left -[ 8] right - []
   // left -> [  8]
   // right -> []
 
@@ -77,7 +77,7 @@ const merge = (left, right) => {
 
     while (left.length && right.length){ // true
       //create a loop that will run while we have elements in both our right and left arrays by checking the truthiness of the length
-      if (left[0] < right[0]){
+      if (left[0] < right[0]){  8 < 6
         // create a condition that looks at the first element of the left array
           sortedArray.push(left.shift())
         // if the value is smaller we want to push it into our array
@@ -125,8 +125,8 @@ const mergeSort = (arr) => {
     // return the result of our merge function called on the result of our mergeSort function called on the left and right of our array
 };
 
-// console.log(mergeSort(testArr));
-// console.log(mergeSort(simpleArray));
+console.log(mergeSort(testArr));
+console.log(mergeSort(simpleArray));
 
 
 

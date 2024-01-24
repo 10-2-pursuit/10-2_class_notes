@@ -17,11 +17,11 @@ const cards = [10, 3, 10, 8, 10, 11, 7, 10, 9, 6, 5, 2, 4];
         }
         return array
     }
-    console.log(cards)
+    // console.log(cards)
     // console.log(onePassBubbleSort(cards))
 
 
-    // lets improve on this my creating a flag that will run our loop until it is in order
+    // lets improve on this by creating a flag that will run our loop until our array is in order
     
     // what do we think the time complexity of bubble sort will be?
     
@@ -31,8 +31,8 @@ const cards = [10, 3, 10, 8, 10, 11, 7, 10, 9, 6, 5, 2, 4];
     const bubbleSort = (array) => {
         let unsorted = true
         // create boolean that will determine if we are sorted
-
         while(unsorted){
+            console.log(array)
             //create a while loop that will run while that value is truthy
             unsorted = false
             // every time we enter the while loop we want to change the value of the boolean since there is the possibility we might be sorted
