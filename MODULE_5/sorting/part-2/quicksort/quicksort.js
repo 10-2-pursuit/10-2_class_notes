@@ -9,7 +9,7 @@ function quickSort(array) {
     // [2, 3, 4, 5, 6, 7, 8, 9]
   // PARTITION STEP
   // choose a pivot element
-//   let pivot = array.shift(); 
+  // let pivot = array.shift(); 
   let idx = Math.floor(Math.random() * array.length);
   let pivot = array[idx];
   console.log(pivot)
@@ -53,15 +53,15 @@ let myCallback = (a, b) => a.name > b.name ? -1 : 1;
 function quickSortWithCallback(array, callback) {
     if(array.length <= 1) return array
 
-    let idx = Math.floor(Math.random() * array.length);
+    let idx = Math.floor(Math.random() * array.length);// chosing a random index to take our pivot from
     let pivot = array[idx];
     //     { name: "Tim", title: "Instructor" },
     array.splice(idx, 1); 
     console.log(pivot)
 
-    let left = array.filter((el) => callback(pivot, el) === -1);
+    let left = array.filter((el) => callback(pivot, el) === -1); // use our call back to filter all item from the remianing array that are less than our pivot
     console.log("LEFT", left) 
-    let right = array.filter((el) => callback(pivot, el) === 1); 
+    let right = array.filter((el) => callback(pivot, el) === 1);  // use our callback to filter out all items from our array that are greater than our pivot
     console.log("RIGHT", right) 
 
     let leftSorted = quickSortWithCallback(left, callback); 
