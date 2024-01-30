@@ -1,15 +1,4 @@
-# Ideation Lesson Notes
-
-## Learning Objectives
-
-- Be able to define what an industry is
-- Be able to name a technology that has aided an industry and briefly explain how that tech aided the industry
-- Explain the difference between an idea and ideation
-- Explain the purpose of ideation
-- Use the process of ideation to develop some ideas
-- Explain what MVP is and how it fits into the product building process
-
-## Guiding Questions
+# Ideation Activity
 
 - Name some industries and how they impact your daily life
 
